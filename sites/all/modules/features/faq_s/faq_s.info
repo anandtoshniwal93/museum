@@ -11,6 +11,4 @@ features[field_instance][] = node-faq_s-field_faq_answer
 features[field_instance][] = node-faq_s-field_faq_question
 features[node][] = faq_s
 features_exclude[dependencies][ctools] = ctools
-features_exclude[field_base][field_faq_answer] = field_faq_answer
-features_exclude[field_base][field_faq_question] = field_faq_question
 project path = sites/all/modules/features
