@@ -4,6 +4,7 @@ package = Features
 version = 7.x-1.0
 dependencies[] = advpoll_field
 dependencies[] = categories_view
+dependencies[] = ctools
 dependencies[] = page_manager
 dependencies[] = panels
 dependencies[] = views
