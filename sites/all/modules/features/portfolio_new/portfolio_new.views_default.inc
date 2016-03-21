@@ -128,9 +128,9 @@ function portfolio_new_views_default_views() {
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
   $handler->display->display_options['filters']['tid']['value'] = array(
-    11 => '11',
-    12 => '12',
-    13 => '13',
+    1 => '1',
+    2 => '2',
+    3 => '3',
   );
   $handler->display->display_options['filters']['tid']['type'] = 'select';
   $handler->display->display_options['filters']['tid']['vocabulary'] = 'categories';

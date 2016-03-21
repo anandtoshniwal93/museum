@@ -1,25 +1,22 @@
 <?php
 /**
  * @file
- * blog_listing_panel.pages_default.inc
+ * archive_panel.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function blog_listing_panel_default_page_manager_pages() {
+function archive_panel_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
-  $page->name = 'blog_panel';
+  $page->name = 'archive_panel';
   $page->task = 'page';
-  $page->admin_title = 'Blog Panel';
+  $page->admin_title = 'Archive Panel';
   $page->admin_description = '';
-  $page->path = 'bloglist';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->path = 'archive';
+  $page->access = array();
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -29,9 +26,9 @@ function blog_listing_panel_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_blog_panel__panel';
+  $handler->name = 'page_archive_panel__panel';
   $handler->task = 'page';
-  $handler->subtask = 'blog_panel';
+  $handler->subtask = 'archive_panel';
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
@@ -61,7 +58,7 @@ function blog_listing_panel_default_page_manager_pages() {
       ),
       'main' => array(
         'type' => 'column',
-        'width' => '70.665054620912',
+        'width' => '75.12498156930116',
         'width_type' => '%',
         'children' => array(
           0 => 'main-row',
@@ -72,22 +69,15 @@ function blog_listing_panel_default_page_manager_pages() {
         'type' => 'row',
         'contains' => 'region',
         'children' => array(
-          0 => 'center',
+          0 => 'content',
         ),
         'parent' => 'main',
-      ),
-      'center' => array(
-        'type' => 'region',
-        'title' => 'Content',
-        'width' => 100,
-        'width_type' => '%',
-        'parent' => 'main-row',
-        'class' => '',
+        'class' => 'row',
         'hide_empty' => 0,
       ),
       1 => array(
         'type' => 'column',
-        'width' => '29.334945379087998',
+        'width' => '24.875018430698848',
         'width_type' => '%',
         'parent' => 'canvas',
         'children' => array(
@@ -104,7 +94,7 @@ function blog_listing_panel_default_page_manager_pages() {
           0 => 'sidebar_1',
         ),
         'parent' => '1',
-        'class' => '',
+        'class' => 'row-1',
         'hide_empty' => 0,
       ),
       3 => array(
@@ -114,6 +104,15 @@ function blog_listing_panel_default_page_manager_pages() {
           0 => 'sidebar_2',
         ),
         'parent' => '1',
+        'class' => 'row-2',
+        'hide_empty' => 0,
+      ),
+      'content' => array(
+        'type' => 'region',
+        'title' => 'Content',
+        'width' => 100,
+        'width_type' => '%',
+        'parent' => 'main-row',
         'class' => '',
         'hide_empty' => 0,
       ),
@@ -140,21 +139,21 @@ function blog_listing_panel_default_page_manager_pages() {
   $display->panel_settings = array(
     'style_settings' => array(
       'default' => NULL,
-      'center' => NULL,
+      'content' => NULL,
       'sidebar_1' => NULL,
       'sidebar_2' => NULL,
     ),
   );
   $display->cache = array();
   $display->title = '';
-  $display->uuid = '7f6e1d77-412c-44d8-917f-193a90afa3da';
+  $display->uuid = 'ba12eb92-d3ab-4b24-abae-c500877ced94';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
-    $pane->panel = 'center';
+    $pane->pid = 'new-75bb650a-5fac-4272-8b81-9eee04527b3f';
+    $pane->panel = 'content';
     $pane->type = 'block';
-    $pane->subtype = 'views-blogs-block_1';
+    $pane->subtype = 'views-archive-block';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -170,11 +169,11 @@ function blog_listing_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
-    $display->content['new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8'] = $pane;
-    $display->panels['center'][0] = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
+    $pane->uuid = '75bb650a-5fac-4272-8b81-9eee04527b3f';
+    $display->content['new-75bb650a-5fac-4272-8b81-9eee04527b3f'] = $pane;
+    $display->panels['content'][0] = 'new-75bb650a-5fac-4272-8b81-9eee04527b3f';
     $pane = new stdClass();
-    $pane->pid = 'new-babddc2f-8ffb-494c-b335-2a0cb4f5c128';
+    $pane->pid = 'new-9f3634ae-c24d-486a-a871-e55fc516cc3a';
     $pane->panel = 'sidebar_1';
     $pane->type = 'block';
     $pane->subtype = 'views-categories-block';
@@ -193,11 +192,11 @@ function blog_listing_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'babddc2f-8ffb-494c-b335-2a0cb4f5c128';
-    $display->content['new-babddc2f-8ffb-494c-b335-2a0cb4f5c128'] = $pane;
-    $display->panels['sidebar_1'][0] = 'new-babddc2f-8ffb-494c-b335-2a0cb4f5c128';
+    $pane->uuid = '9f3634ae-c24d-486a-a871-e55fc516cc3a';
+    $display->content['new-9f3634ae-c24d-486a-a871-e55fc516cc3a'] = $pane;
+    $display->panels['sidebar_1'][0] = 'new-9f3634ae-c24d-486a-a871-e55fc516cc3a';
     $pane = new stdClass();
-    $pane->pid = 'new-b5441822-0da9-46a6-b465-12e9fe55aade';
+    $pane->pid = 'new-786748ff-9be0-4d0b-a072-5f3e17edbb06';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
     $pane->subtype = 'advpoll-advpoll_block_41';
@@ -216,14 +215,14 @@ function blog_listing_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'b5441822-0da9-46a6-b465-12e9fe55aade';
-    $display->content['new-b5441822-0da9-46a6-b465-12e9fe55aade'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-b5441822-0da9-46a6-b465-12e9fe55aade';
+    $pane->uuid = '786748ff-9be0-4d0b-a072-5f3e17edbb06';
+    $display->content['new-786748ff-9be0-4d0b-a072-5f3e17edbb06'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-786748ff-9be0-4d0b-a072-5f3e17edbb06';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
+  $display->title_pane = 'new-75bb650a-5fac-4272-8b81-9eee04527b3f';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['blog_panel'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 

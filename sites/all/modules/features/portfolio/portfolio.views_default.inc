@@ -32,13 +32,6 @@ function portfolio_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'node';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -62,6 +55,38 @@ function portfolio_views_default_views() {
   /* Display: Portfolio ALL */
   $handler = $view->new_display('page', 'Portfolio ALL', 'page');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '200',
+  );
+  /* Field: Content: Blog_image */
+  $handler->display->display_options['fields']['field_blog_image']['id'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['table'] = 'field_data_field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['field'] = 'field_blog_image';
+  $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_blog_image']['type'] = 'imagezoom';
+  $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
+    'imagezoom_zoom_type' => 'inner',
+    'imagezoom_display_style' => 'medium',
+    'imagezoom_zoom_style' => 'medium',
+  );
   $handler->display->display_options['path'] = 'portfolios';
 
   /* Display: portfolio history */

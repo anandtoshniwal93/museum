@@ -1,25 +1,22 @@
 <?php
 /**
  * @file
- * blog_listing_panel.pages_default.inc
+ * faq_panel.pages_default.inc
  */
 
 /**
  * Implements hook_default_page_manager_pages().
  */
-function blog_listing_panel_default_page_manager_pages() {
+function faq_panel_default_page_manager_pages() {
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
   $page->api_version = 1;
-  $page->name = 'blog_panel';
+  $page->name = 'faq_panel';
   $page->task = 'page';
-  $page->admin_title = 'Blog Panel';
+  $page->admin_title = 'FAQ Panel';
   $page->admin_description = '';
-  $page->path = 'bloglist';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->path = 'faq';
+  $page->access = array();
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -29,9 +26,9 @@ function blog_listing_panel_default_page_manager_pages() {
   $handler = new stdClass();
   $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
   $handler->api_version = 1;
-  $handler->name = 'page_blog_panel__panel';
+  $handler->name = 'page_faq_panel__panel';
   $handler->task = 'page';
-  $handler->subtask = 'blog_panel';
+  $handler->subtask = 'faq_panel';
   $handler->handler = 'panel_context';
   $handler->weight = 0;
   $handler->conf = array(
@@ -61,7 +58,7 @@ function blog_listing_panel_default_page_manager_pages() {
       ),
       'main' => array(
         'type' => 'column',
-        'width' => '70.665054620912',
+        'width' => '70.49356039169281',
         'width_type' => '%',
         'children' => array(
           0 => 'main-row',
@@ -87,7 +84,7 @@ function blog_listing_panel_default_page_manager_pages() {
       ),
       1 => array(
         'type' => 'column',
-        'width' => '29.334945379087998',
+        'width' => '29.506439608307183',
         'width_type' => '%',
         'parent' => 'canvas',
         'children' => array(
@@ -147,14 +144,14 @@ function blog_listing_panel_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = '';
-  $display->uuid = '7f6e1d77-412c-44d8-917f-193a90afa3da';
+  $display->uuid = '8a9ef9cc-4da8-435b-bb42-22a20ac42dd7';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
+    $pane->pid = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
     $pane->panel = 'center';
     $pane->type = 'block';
-    $pane->subtype = 'views-blogs-block_1';
+    $pane->subtype = 'views-faq_s-block_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -170,11 +167,11 @@ function blog_listing_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
-    $display->content['new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8'] = $pane;
-    $display->panels['center'][0] = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
+    $pane->uuid = 'c5276e22-f295-460d-a6a1-d1bbb3f4588b';
+    $display->content['new-c5276e22-f295-460d-a6a1-d1bbb3f4588b'] = $pane;
+    $display->panels['center'][0] = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
     $pane = new stdClass();
-    $pane->pid = 'new-babddc2f-8ffb-494c-b335-2a0cb4f5c128';
+    $pane->pid = 'new-88261c93-df9a-4c74-8907-27e1b90c4bfd';
     $pane->panel = 'sidebar_1';
     $pane->type = 'block';
     $pane->subtype = 'views-categories-block';
@@ -193,11 +190,11 @@ function blog_listing_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'babddc2f-8ffb-494c-b335-2a0cb4f5c128';
-    $display->content['new-babddc2f-8ffb-494c-b335-2a0cb4f5c128'] = $pane;
-    $display->panels['sidebar_1'][0] = 'new-babddc2f-8ffb-494c-b335-2a0cb4f5c128';
+    $pane->uuid = '88261c93-df9a-4c74-8907-27e1b90c4bfd';
+    $display->content['new-88261c93-df9a-4c74-8907-27e1b90c4bfd'] = $pane;
+    $display->panels['sidebar_1'][0] = 'new-88261c93-df9a-4c74-8907-27e1b90c4bfd';
     $pane = new stdClass();
-    $pane->pid = 'new-b5441822-0da9-46a6-b465-12e9fe55aade';
+    $pane->pid = 'new-87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
     $pane->subtype = 'advpoll-advpoll_block_41';
@@ -216,14 +213,14 @@ function blog_listing_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'b5441822-0da9-46a6-b465-12e9fe55aade';
-    $display->content['new-b5441822-0da9-46a6-b465-12e9fe55aade'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-b5441822-0da9-46a6-b465-12e9fe55aade';
+    $pane->uuid = '87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e';
+    $display->content['new-87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
+  $display->title_pane = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['blog_panel'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 

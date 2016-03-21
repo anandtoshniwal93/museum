@@ -226,7 +226,7 @@ function blog_node_panel_default_page_manager_pages() {
   $display->title_pane = 'new-ce02d285-949f-403e-bdf5-af51fe0f874e';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['blognode'] = $page;
 
   return $pages;
 
