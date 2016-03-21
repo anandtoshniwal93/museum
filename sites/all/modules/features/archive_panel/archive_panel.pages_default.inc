@@ -222,7 +222,7 @@ function archive_panel_default_page_manager_pages() {
   $display->title_pane = 'new-75bb650a-5fac-4272-8b81-9eee04527b3f';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['archive_panel'] = $page;
 
   return $pages;
 
