@@ -1,0 +1,15 @@
+name = testimonial content 
+core = 7.x
+package = Features
+version = 7.x-1.0
+dependencies[] = base_fields
+dependencies[] = features
+dependencies[] = image
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-testimonials-body
+features[field_instance][] = node-testimonials-field_author_name
+features[field_instance][] = node-testimonials-field_image1
+features[field_instance][] = node-testimonials-field_relation
+features[node][] = testimonials
+project path = sites/all/modules/features
