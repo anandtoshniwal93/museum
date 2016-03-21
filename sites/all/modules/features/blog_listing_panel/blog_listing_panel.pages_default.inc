@@ -16,7 +16,10 @@ function blog_listing_panel_default_page_manager_pages() {
   $page->admin_title = 'Blog Panel';
   $page->admin_description = '';
   $page->path = 'bloglist';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -220,7 +223,7 @@ function blog_listing_panel_default_page_manager_pages() {
   $display->title_pane = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['blog_panel'] = $page;
 
   return $pages;
 
