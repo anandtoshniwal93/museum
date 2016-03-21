@@ -12,10 +12,6 @@ dependencies[] = number
 dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = youtube
-<<<<<<< HEAD
-features[field_base][] = field_author_name
->>>>>>> 3fd2454eca7298bead3c92194de9c4d2fb9bf8c9
-features[field_base][] = field_blog_image
 features[features_api][] = api:2
 features[field_base][] = advpoll_behavior
 features[field_base][] = advpoll_choice
