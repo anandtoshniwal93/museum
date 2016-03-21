@@ -201,10 +201,10 @@ function sponsor_default_page_manager_pages() {
     $display->content['new-15d3fe32-f405-45d8-aaee-f808f460471b'] = $pane;
     $display->panels['s'][0] = 'new-15d3fe32-f405-45d8-aaee-f808f460471b';
     $pane = new stdClass();
-    $pane->pid = 'new-7e78381c-f181-4c28-ad37-697ee0927f7d';
+    $pane->pid = 'new-495cee60-f351-4244-b022-6398809346cf';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_41';
+    $pane->subtype = 'advpoll-advpoll_block_27';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -220,14 +220,14 @@ function sponsor_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '7e78381c-f181-4c28-ad37-697ee0927f7d';
-    $display->content['new-7e78381c-f181-4c28-ad37-697ee0927f7d'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-7e78381c-f181-4c28-ad37-697ee0927f7d';
+    $pane->uuid = '495cee60-f351-4244-b022-6398809346cf';
+    $display->content['new-495cee60-f351-4244-b022-6398809346cf'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-495cee60-f351-4244-b022-6398809346cf';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['sponsor_details'] = $page;
 
   return $pages;
 
