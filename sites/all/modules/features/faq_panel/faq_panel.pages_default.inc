@@ -220,7 +220,7 @@ function faq_panel_default_page_manager_pages() {
   $display->title_pane = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['faq_panel'] = $page;
 
   return $pages;
 
