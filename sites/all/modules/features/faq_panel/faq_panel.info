@@ -11,3 +11,4 @@ features[ctools][] = page_manager:pages_default:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[page_manager_pages][] = faq_panel
+features[views_view][] = faq_s
