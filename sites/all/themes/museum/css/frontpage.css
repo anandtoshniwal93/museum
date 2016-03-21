@@ -6,6 +6,7 @@ body {
   line-height:22px;
   min-width:1200px;
   position:relative;
+  background: url(../images/header-bg.jpg) center top no-repeat #c8c6c2;
 }
 #page,#header{
   margin:0;
@@ -13,7 +14,7 @@ body {
   max-width: 100%;
 }
 #header{
-  background: url(../images/header-bg.jpg) center top no-repeat #c8c6c2;
+
   height: 1011px;
   background-size: 143%;
 }
