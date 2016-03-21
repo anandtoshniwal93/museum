@@ -2,7 +2,6 @@ name = Blog Listing Panel
 core = 7.x
 package = Features
 version = 7.x-1.0
-dependencies[] = advpoll_field
 dependencies[] = blog_content
 dependencies[] = categories_view
 dependencies[] = ctools
