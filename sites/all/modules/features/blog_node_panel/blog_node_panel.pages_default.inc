@@ -169,7 +169,10 @@ function blog_node_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'blog-node',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -192,7 +195,10 @@ function blog_node_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'categories',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -200,10 +206,10 @@ function blog_node_panel_default_page_manager_pages() {
     $display->content['new-d3ddbbb7-2c06-41f4-bcb3-c4d107332425'] = $pane;
     $display->panels['sidebar_1'][0] = 'new-d3ddbbb7-2c06-41f4-bcb3-c4d107332425';
     $pane = new stdClass();
-    $pane->pid = 'new-bf8d5f46-7f1d-4b18-89bf-9b951e7ecca8';
+    $pane->pid = 'new-b4f4d33d-630c-43dc-a1ea-15f8fd99e94b';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_41';
+    $pane->subtype = 'advpoll-advpoll_block_22';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -215,13 +221,16 @@ function blog_node_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'bf8d5f46-7f1d-4b18-89bf-9b951e7ecca8';
-    $display->content['new-bf8d5f46-7f1d-4b18-89bf-9b951e7ecca8'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-bf8d5f46-7f1d-4b18-89bf-9b951e7ecca8';
+    $pane->uuid = 'b4f4d33d-630c-43dc-a1ea-15f8fd99e94b';
+    $display->content['new-b4f4d33d-630c-43dc-a1ea-15f8fd99e94b'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-b4f4d33d-630c-43dc-a1ea-15f8fd99e94b';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-ce02d285-949f-403e-bdf5-af51fe0f874e';
   $handler->conf['display'] = $display;

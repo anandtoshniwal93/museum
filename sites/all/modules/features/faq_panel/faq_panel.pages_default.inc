@@ -163,7 +163,10 @@ function faq_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'faq',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -186,7 +189,10 @@ function faq_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'categories',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -194,10 +200,10 @@ function faq_panel_default_page_manager_pages() {
     $display->content['new-88261c93-df9a-4c74-8907-27e1b90c4bfd'] = $pane;
     $display->panels['sidebar_1'][0] = 'new-88261c93-df9a-4c74-8907-27e1b90c4bfd';
     $pane = new stdClass();
-    $pane->pid = 'new-87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e';
+    $pane->pid = 'new-b83ffce5-7aee-4a9e-86a7-9f4fc025648b';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_41';
+    $pane->subtype = 'advpoll-advpoll_block_22';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -209,13 +215,16 @@ function faq_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e';
-    $display->content['new-87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-87df9901-9f3f-4c1a-bd07-f82e2bcd6a4e';
+    $pane->uuid = 'b83ffce5-7aee-4a9e-86a7-9f4fc025648b';
+    $display->content['new-b83ffce5-7aee-4a9e-86a7-9f4fc025648b'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-b83ffce5-7aee-4a9e-86a7-9f4fc025648b';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
   $handler->conf['display'] = $display;

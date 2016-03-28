@@ -120,10 +120,10 @@ function blog_content_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
+    'title' => 'title',
     'name' => 'name',
     'created' => 'created',
     'comment_count' => 'comment_count',
-    'title' => 'title',
   );
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
@@ -143,6 +143,7 @@ function blog_content_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['path'] = 'blognode/[nid]';
+  $handler->display->display_options['fields']['title']['element_type'] = 'h6';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: User: Name */
