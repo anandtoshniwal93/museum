@@ -7,7 +7,9 @@
  * @see https://drupal.org/node/1728148
  */
 ?>
-
+<head>
+  <meta name="viewport" content="width = device-width">
+</head>
 <div id="page">
 
   <header class="header" id="header" role="banner">
