@@ -213,7 +213,7 @@ function about_us_default_page_manager_pages() {
   $display->title_pane = 'new-7b0cef4e-cc46-402a-92b3-719cc7be317f';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['about__us'] = $page;
 
   return $pages;
 
