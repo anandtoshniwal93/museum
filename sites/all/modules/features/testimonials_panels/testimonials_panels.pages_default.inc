@@ -16,7 +16,10 @@ function testimonials_panels_default_page_manager_pages() {
   $page->admin_title = 'Testimonials';
   $page->admin_description = 'Testimonials';
   $page->path = 'testimonials';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -230,7 +233,7 @@ function testimonials_panels_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['testimonials'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 

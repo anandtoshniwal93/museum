@@ -20,11 +20,12 @@ body {
     background: url('../images/header-bg.jpg') center top no-repeat;
 }
 
-.inside {}
+
 
 .front-first {
-    background: rgba(0, 0, 0, 0.5);
+
     padding: 34px 0 43px;
+    background: rgba(0,0,0,0.5);
 }
 
 .front-second {
@@ -49,11 +50,14 @@ body {
 .front-sponsors,
 .region-footer,
 .panel-col-bottom,
-.header__region {
+.header__region ,
+.about-us-testimony,
+.pane-about-us
+{
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: 80.3%;
+    width: 1156px;
 }
 
 .front-sponsors .views-row {
@@ -205,7 +209,7 @@ body {
 
 .center-wrapper {
     margin: 0 auto;
-    max-width: 80.3%;
+    max-width: 1156px;
     display: table;
     margin-top: -13px;
 }
@@ -494,11 +498,118 @@ body {
     border-bottom: 1px solid #575757;
 }
 
-#backtotop {
-    background-color: #1BBAF0;
+.about-us{
+    background-color:#31353D;
+
+}
+.about-us .left-img{
+    float:left;
+    padding:0px 15px 15px 0px;
+}
+.about-us .right-img{
+    float: right;
+    padding:0px 0px 15px 15px;
+}
+.about-us h1{
+    font: 400 23px/30px 'Adamina', serif;
+    margin-bottom: 14px;
+    color:white;
+}
+.about-us p{
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: justify;
+    line-height: 20px;
+    padding: 0px 15px 0px 15px;
+    font-size: 16px;
+}
+
+.inside.panels-flexible-row-inside.panels-flexible-row-6-main-row-inside.panels-flexible-row-inside-first.clearfix  {
+    background-color: #31353D;
+    border-top:10px solid #00aeee
+}
+.panels-flexible-6 .panels-flexible-row {
+    padding: 0;
+}
+.offer{
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+}
+.offer .views-field-title {
+    visibility: hidden;
+}
+.offer .views-field-counter{
+    color: black;
+}
+.offer .views-field-counter:after,
+.offer .views-field-counter:before {
+    background: url('../images/border-7.png') center top repeat-x;
+}
+
+.offer .views-row{
+    padding-bottom: 40px;
+}
+.offer .views-more-link{
+    background-color:#31353D;
+    color:white;
+}
+.testimony{
+    background-color: white;
+    padding: 60px 0 64px;
+    width: 100%;
+}
+.testimony .pane-title, .pane-about-us .pane-title{
+    color:white;
+    font: 400 32px/40px 'Adamina', serif;
+    margin-bottom: 30px;
+
+}
+
+.testimony .pane-title{
+    margin-left: 158px;
+    color: black;
+}
+.about-us-testimony .views-row{
+    display: inline-block;
+    width: 45%;
+    position:relative;
+    padding-right: 51px;
+}
+.about-us-testimony .views-row img{
+        box-shadow: 10px 4px 0 rgba(226,226,226,0.5);
+    border-radius: 500px;
+    float: left;
+    margin-right: 27px;
+    }
+.about-us-testimony .views-field-field-image1:after{
+    transition: all 0.3s ease;
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/quote.png) 0 0 no-repeat;
+}
+.about-us-testimony .views-field-body a {
+    text-decoration: none;
+    color:#777788;
+}
+.about-us-testimony .views-field-body a:hover{
+    color: #21b7e9;
+}
+.about-us-testimony .views-field-field-author-name{
+    padding-top: 20px;
+    color: #31353d;
+    font: 400 23px/30px 'Adamina', serif;
+    margin-bottom: 14px;
 }
 
 @media screen and (max-width: 640px) {
+    .pane-about-us{
+        width:94%;
+    }
     .block1 .views-field-field-blog-image {
         float: none;
     }
@@ -587,6 +698,21 @@ body {
     .front-sponsors {
         width: 40%;
     }
+    .offer .views-row{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    .about-us-testimony .views-row{
+        width: 100%;
+        padding-right: 0px;
+    }
+    .offer .views-row-last
+    {
+        margin-bottom: 40px;
+    }
+    .testimony .pane-title {
+    margin-left: 31px;
+}
 }
 
 @media screen and (min-width: 640px) and (max-width: 1024px) {
@@ -606,11 +732,27 @@ body {
     .block1 .views-field-title a {
         font-size: 68px;
     }
-    .header__region {
+    .header__region,.pane-about-us{
+
         margin: 0px auto;
         padding: 0;
         width: 94%;
         position: relative;
     }
+    .about-us-testimony .views-row img{
+        width:127px;
+        height: 127px;
+
+    }
+    .about-us-testimony .views-row{
+        width:45%;
+        padding-right: 25px;
+    }
+    .about-us-testimony .views-field-body{
+        display: table;
+        height: 100px;
+        overflow: hidden;
+    }
+
 
 }
