@@ -50,7 +50,7 @@ function testimonials_panels_views_default_views() {
   $handler->display->display_options['fields']['nid']['alter']['path'] = 'node/[nid]';
   $handler->display->display_options['fields']['nid']['alter']['max_length'] = '300';
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: : field_image1 */
+  /* Field: Content: Test_Image */
   $handler->display->display_options['fields']['field_image1']['id'] = 'field_image1';
   $handler->display->display_options['fields']['field_image1']['table'] = 'field_data_field_image1';
   $handler->display->display_options['fields']['field_image1']['field'] = 'field_image1';
@@ -142,7 +142,7 @@ function testimonials_panels_views_default_views() {
   $handler->display->display_options['fields']['nid']['alter']['path'] = 'node/[nid]';
   $handler->display->display_options['fields']['nid']['alter']['max_length'] = '300';
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: : field_image1 */
+  /* Field: Content: Test_Image */
   $handler->display->display_options['fields']['field_image1']['id'] = 'field_image1';
   $handler->display->display_options['fields']['field_image1']['table'] = 'field_data_field_image1';
   $handler->display->display_options['fields']['field_image1']['field'] = 'field_image1';
@@ -150,7 +150,7 @@ function testimonials_panels_views_default_views() {
   $handler->display->display_options['fields']['field_image1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image1']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'thumbnail',
     'image_link' => '',
   );
   /* Field: Content: Body */

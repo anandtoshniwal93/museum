@@ -37,7 +37,7 @@ function testimonials_panels_default_page_manager_pages() {
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
+    'css_id' => 'testimo',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
@@ -164,7 +164,10 @@ function testimonials_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'testimonial',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -187,7 +190,10 @@ function testimonials_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'categories',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -195,10 +201,10 @@ function testimonials_panels_default_page_manager_pages() {
     $display->content['new-1e85efcb-0afe-41ec-b4bb-c42ddfb8042f'] = $pane;
     $display->panels['sidebar1'][0] = 'new-1e85efcb-0afe-41ec-b4bb-c42ddfb8042f';
     $pane = new stdClass();
-    $pane->pid = 'new-4572d4c2-31ce-41d6-b20d-f5095c70432d';
+    $pane->pid = 'new-19c359ef-aee0-47ad-91a0-7bc68e8ed524';
     $pane->panel = 'sidebar2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_41';
+    $pane->subtype = 'advpoll-advpoll_block_22';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -210,13 +216,16 @@ function testimonials_panels_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '4572d4c2-31ce-41d6-b20d-f5095c70432d';
-    $display->content['new-4572d4c2-31ce-41d6-b20d-f5095c70432d'] = $pane;
-    $display->panels['sidebar2'][0] = 'new-4572d4c2-31ce-41d6-b20d-f5095c70432d';
+    $pane->uuid = '19c359ef-aee0-47ad-91a0-7bc68e8ed524';
+    $display->content['new-19c359ef-aee0-47ad-91a0-7bc68e8ed524'] = $pane;
+    $display->panels['sidebar2'][0] = 'new-19c359ef-aee0-47ad-91a0-7bc68e8ed524';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
