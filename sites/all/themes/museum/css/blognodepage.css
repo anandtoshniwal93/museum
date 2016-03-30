@@ -1,0 +1,150 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+
+#main #blognode {
+  background: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.blog-node .field-item even .field-item odd{
+  background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.blog-node p{
+  margin-bottom: 22px;
+  margin: 0 0 15px;
+  line-height: 21px;
+  font:'Adamina', serif;
+}
+
+
+
+.blog-node .field-label-inline .field-label{
+  display: none;
+}
+
+.blog-node .field-label-inline .field-items{
+  color: #21B7E9;
+}
+
+.blog-node .field-label-inline .field-items:hover{
+  text-decoration: underline;
+}
+
+.blog-node .field-label-inline .field-label:before,
+.blog-node .field-label-inline .field-items:before{
+  content: "\f02c";
+    display: block;
+    float: left;
+    font-family: fontAwesome;
+    margin-right: 4px;
+}
+
+
+.blog-node .blog_usernames_blog, .blog-node .comment_forbidden a{
+  background: #4d5057;
+    padding: 8px;
+    border-radius: 13px;
+    border: none;
+    border-radius: 21px;
+    box-shadow: none;
+    color: #fff;
+    display: inline-block;
+    font: 400 19px/22px 'Adamina', serif;
+    outline: none;
+    padding: 9px 28px 13px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.blog-node .blog_usernames_blog:hover, .blog-node .comment_forbidden a:hover{
+  background-color: #21B7E9;
+  padding: 8px;
+    border-radius: 13px;
+    border: none;
+    border-radius: 21px;
+    box-shadow: none;
+    color: #fff;
+    display: inline-block;
+    font: 400 19px/22px 'Adamina', serif;
+    outline: none;
+    padding: 9px 28px 13px;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.field-name-field-blog-categories  .field-item even , .field-name-field-blog-categories .field-item odd {
+display: inline;
+padding-right: 3px;
+background: url(../images/star-3.png) 0 6px no-repeat;
+}
+.field .field-label {
+  color: white;
+}
+.categories .views-row{
+  padding-bottom: 20px;
+  text-transform: capitalize;
+  background: url(../images/star-3.png) 0 6px no-repeat;
+  padding-left: 20px;
+}
+
+.categories .views-row a:hover,.blogs-list .field-content a:hover{
+  color: #21B7E9;
+}
+
+.blog-node .username:before{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    content: "\f007";
+    color: #21B7E9;
+    font-size: smaller;
+    margin-right: 1%;
+
+   }
+
+.blog-node time:before{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    content: "\f073";
+    color: #21B7E9;
+    font-size: smaller;
+    margin-right: 1%;
+  }
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+  .blog-node .blog_usernames_blog{
+    margin-bottom: 2%;
+  }
+  h2{
+    padding-top: 7%;
+  }
+  .blog-node img{
+    padding-bottom: 5%;
+  }
+  .blog-node p.submitted .username,
+  .blog-node p.submitted time{
+  /*margin: 0 0 15px;*/
+    line-height: 21px;
+    display:block;
+    border-bottom: 1px solid #777;
+    border-bottom-width: 0.2px;
+  }
+
+  .blog-node .username:before,
+  .blog-node time:before{
+    margin-right: 2%;
+  }
+}
+

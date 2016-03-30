@@ -1,0 +1,27 @@
+#main #testimo {
+  background: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.testimonial .field-content img{
+  float:left;
+  padding-right: 5%;
+}
+
+.testimonial .views-row {
+  clear: both;
+    min-height: 180px;
+}
+
+.testimonial .views-field.views-field-field-author-name,
+.testimonial .views-field.views-field-field-relation{
+  float: right;
+  clear: inherit;
+}
+
+.testimonial .field-content p:hover{
+  color: #21B7E9;
+}

@@ -1,0 +1,32 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+#main #faqmain {
+  background: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.faq a{
+  color: #31353d;
+    text-transform: uppercase;
+    font: 400 14px/20px 'Adamina', serif;
+    margin-bottom: 10px;
+}
+.faq a:hover{
+   color: #21B7E9;
+}
+.faq h2{
+  color: #31353d;
+    font: 400 32px/40px 'Adamina', serif;
+    margin-bottom: 30px;
+    font-family: FontAwesome;
+}
+
+.faq p{
+  margin-top: 2%;
+    margin-bottom: 2%;
+    line-height: 150%;
+}
+
+

@@ -1,0 +1,16 @@
+
+#main #archivelist {
+  background: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.archive .view-content li a{
+  background: url(../images/star-3.png) 0 6px no-repeat;
+  padding-left: 20px;
+}
+.archive .view-content li a:hover{
+  color: #21B7E9;
+}
