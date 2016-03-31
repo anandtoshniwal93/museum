@@ -48,7 +48,8 @@
 }
 
 
-.blog-node .blog_usernames_blog, .blog-node .comment_forbidden a{
+.blog-node .blog_usernames_blog, .blog-node .comment_forbidden a,
+.porto .views-more-link{
   background: #4d5057;
     padding: 8px;
     border-radius: 13px;
