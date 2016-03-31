@@ -79,7 +79,10 @@ function home_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'front-sponsors',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -102,7 +105,10 @@ function home_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'front-three',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -125,7 +131,10 @@ function home_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'front-second',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -148,7 +157,10 @@ function home_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'front-four',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -171,7 +183,10 @@ function home_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'front-first',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -182,7 +197,7 @@ function home_default_page_manager_pages() {
   $display->title_pane = 'new-daeff013-a91c-4130-8c5e-38eb0c9fbf29';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['front_page'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 
