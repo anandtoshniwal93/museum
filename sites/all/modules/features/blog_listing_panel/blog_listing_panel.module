@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Blog Listing Panel feature.
- */
-
-include_once 'blog_listing_panel.features.inc';
