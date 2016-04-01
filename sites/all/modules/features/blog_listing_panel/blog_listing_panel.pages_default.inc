@@ -203,10 +203,10 @@ function blog_listing_panel_default_page_manager_pages() {
     $display->content['new-babddc2f-8ffb-494c-b335-2a0cb4f5c128'] = $pane;
     $display->panels['sidebar_1'][0] = 'new-babddc2f-8ffb-494c-b335-2a0cb4f5c128';
     $pane = new stdClass();
-    $pane->pid = 'new-dda2ab6f-6d3f-47d8-9f0c-da130df56e36';
+    $pane->pid = 'new-1e2569e5-3fff-4939-96e2-6a40a3f6cec1';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_22';
+    $pane->subtype = 'advpoll-advpoll_block_29';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -225,14 +225,14 @@ function blog_listing_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'dda2ab6f-6d3f-47d8-9f0c-da130df56e36';
-    $display->content['new-dda2ab6f-6d3f-47d8-9f0c-da130df56e36'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-dda2ab6f-6d3f-47d8-9f0c-da130df56e36';
+    $pane->uuid = '1e2569e5-3fff-4939-96e2-6a40a3f6cec1';
+    $display->content['new-1e2569e5-3fff-4939-96e2-6a40a3f6cec1'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-1e2569e5-3fff-4939-96e2-6a40a3f6cec1';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-89f7f2ee-b3a7-418b-ae37-eaaf40a556c8';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['blog_panel'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 
