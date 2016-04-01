@@ -59,7 +59,7 @@ stylesheets[all][] = css/faq.css
 stylesheets[all][] = css/testimonial.css
 stylesheets[all][] = css/portfolio.css
 stylesheets[all][] = css/archive.css
-stylesheets[all][] = css/contactpage.css
+
 
 
 
