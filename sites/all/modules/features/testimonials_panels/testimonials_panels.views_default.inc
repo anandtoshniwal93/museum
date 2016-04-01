@@ -114,6 +114,7 @@ function testimonials_panels_views_default_views() {
 
   /* Display: T-block: page */
   $handler = $view->new_display('block', 'T-block: page', 'block_2');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
