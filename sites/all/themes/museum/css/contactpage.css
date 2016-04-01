@@ -21,7 +21,7 @@
 
 .webform-component--name , .webform-component--email , .webform-component--subject {
             display: inline;
-            margin-right: 34px;
+            margin-right: 60px;
 }
 
 .webform-component--message{
@@ -39,8 +39,7 @@
             width: 99% !important;
           }
 
-.webform-submit {
-    background: #4d5057;
+.webform-submit {background: #4d5057;
     padding: 8px;
     border-radius: 13px;
     border: none;
@@ -99,7 +98,7 @@ body {
       border: 1px solid #d8d8da;
 }
 
-#main  {
+#main {
       background-color: white;
 }
 
@@ -208,7 +207,7 @@ body {
     border: 5px solid #d8d8da;
 }
 .form-textarea-wrapper {
-     width: 165%;
+     width: 100%;
 }
 .webform-submit {
      font-size: 80px;
