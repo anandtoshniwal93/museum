@@ -64,6 +64,32 @@ function home_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
+    $pane->pid = 'new-f218fb31-5946-4f6c-b15f-e86a5b8edc2f';
+    $pane->panel = 'bottom';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'font_mini';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+      'override_title_heading' => 'h2',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'video-block',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $pane->uuid = 'f218fb31-5946-4f6c-b15f-e86a5b8edc2f';
+    $display->content['new-f218fb31-5946-4f6c-b15f-e86a5b8edc2f'] = $pane;
+    $display->panels['bottom'][0] = 'new-f218fb31-5946-4f6c-b15f-e86a5b8edc2f';
+    $pane = new stdClass();
     $pane->pid = 'new-5d8aad3a-29d4-499b-8066-298f2b87b208';
     $pane->panel = 'bottom';
     $pane->type = 'block';
@@ -84,11 +110,11 @@ function home_default_page_manager_pages() {
       'css_class' => 'front-sponsors',
     );
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 1;
     $pane->locks = array();
     $pane->uuid = '5d8aad3a-29d4-499b-8066-298f2b87b208';
     $display->content['new-5d8aad3a-29d4-499b-8066-298f2b87b208'] = $pane;
-    $display->panels['bottom'][0] = 'new-5d8aad3a-29d4-499b-8066-298f2b87b208';
+    $display->panels['bottom'][1] = 'new-5d8aad3a-29d4-499b-8066-298f2b87b208';
     $pane = new stdClass();
     $pane->pid = 'new-f461f526-db1c-41da-9523-763609c772bb';
     $pane->panel = 'left_below';

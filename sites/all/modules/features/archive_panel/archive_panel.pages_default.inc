@@ -15,7 +15,7 @@ function archive_panel_default_page_manager_pages() {
   $page->task = 'page';
   $page->admin_title = 'Archive Panel';
   $page->admin_description = '';
-  $page->path = 'archive';
+  $page->path = 'archive-list';
   $page->access = array();
   $page->menu = array();
   $page->arguments = array();
@@ -37,7 +37,7 @@ function archive_panel_default_page_manager_pages() {
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
+    'css_id' => 'archivelist',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
@@ -165,7 +165,10 @@ function archive_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'archive',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -188,7 +191,10 @@ function archive_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'categories',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -196,10 +202,10 @@ function archive_panel_default_page_manager_pages() {
     $display->content['new-9f3634ae-c24d-486a-a871-e55fc516cc3a'] = $pane;
     $display->panels['sidebar_1'][0] = 'new-9f3634ae-c24d-486a-a871-e55fc516cc3a';
     $pane = new stdClass();
-    $pane->pid = 'new-786748ff-9be0-4d0b-a072-5f3e17edbb06';
+    $pane->pid = 'new-672ce4ae-6e52-4ad2-8f44-f280a0d6d5b3';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_41';
+    $pane->subtype = 'advpoll-advpoll_block_29';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -211,13 +217,16 @@ function archive_panel_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'poll',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '786748ff-9be0-4d0b-a072-5f3e17edbb06';
-    $display->content['new-786748ff-9be0-4d0b-a072-5f3e17edbb06'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-786748ff-9be0-4d0b-a072-5f3e17edbb06';
+    $pane->uuid = '672ce4ae-6e52-4ad2-8f44-f280a0d6d5b3';
+    $display->content['new-672ce4ae-6e52-4ad2-8f44-f280a0d6d5b3'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-672ce4ae-6e52-4ad2-8f44-f280a0d6d5b3';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-75bb650a-5fac-4272-8b81-9eee04527b3f';
   $handler->conf['display'] = $display;
