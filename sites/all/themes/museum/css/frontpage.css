@@ -26,6 +26,7 @@ body {
 
     padding: 34px 0 43px;
     background: rgba(0,0,0,0.5);
+
 }
 
 .front-second {
@@ -35,6 +36,7 @@ body {
     padding: 55px 0 16px;
     overflow: hidden;
     border-top: 12px solid #1BBAF0;
+     border-bottom: 11px solid #c0c1c3;
 }
 
 .front-last {
@@ -52,12 +54,37 @@ body {
 .panel-col-bottom,
 .header__region ,
 .about-us-testimony,
-.pane-about-us
+/*.pane-about-us*/
+.video, .sponsors,.mini
 {
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: 1156px;
+    width: 80.3%;
+
+}
+.sponsors{
+    padding: 65px 0 50px;
+}
+.video-block{
+    padding: 117px 0 102px;
+   background-color: #4d5057;
+}
+.video{
+    text-align: center;
+}
+.video >p{
+        background: url('../images/border-6.png') center top repeat-x;
+        padding: 30px 0 0;
+        color: white;
+        margin: 0 240px;
+        font-size: 26px;
+}
+.video >h1 {
+    font-family: 'Bevan', cursive;
+    font-size: 61px;
+    line-height: 70px;
+    color: white;
 }
 
 .front-sponsors .views-row {
@@ -111,6 +138,7 @@ body {
 .block2 {
     text-align: center;
     text-decoration: justify;
+
 }
 
 .block2 .views-field-title,
@@ -167,6 +195,7 @@ body {
 
 .views-field-field-company-logo {
     padding-right: 10px;
+    float: left;
 }
 
 .block2 .views-row {
@@ -209,7 +238,7 @@ body {
 
 .center-wrapper {
     margin: 0 auto;
-    max-width: 1156px;
+    max-width: 80.3%;
     display: table;
     margin-top: -13px;
 }
@@ -464,7 +493,7 @@ body {
 }
 
 .tb-megamenu.style-blue .dropdown-menu {
-    border-bottom-color: red;
+    border-bottom-color:#1BBAF0;
 }
 
 .tb-megamenu .dropdown-menu {
@@ -473,15 +502,40 @@ body {
     left: 0;
     z-index: 1000;
     display: none;
-    float: left;
-    min-width: 160px;
+    width: 550px;
     list-style: none;
     background-color: #1BBAF0;
     border-top: none;
     padding: 0;
     margin: 0;
+    margin-left: 100px;
+
 }
 
+.tb-megamenu .dropdown-menu li a{
+    color: white;
+    font-size: 14px;
+    font-family: times new roman ,serif;
+
+}
+
+.tb-megamenu.style-blue  .dropdown-menu li > a:hover{
+      color:black;
+}
+.tb-megamenu .dropdown-menu li > a{
+    line-height: 5px;
+}
+
+.tb-megamenu .row-fluid .span4 {
+    width: 50%;
+}
+.tb-megamenu .row-fluid {
+    width: 209px;
+    display: inline-block;
+}
+.mega-dropdown-inner{
+  white-space: nowrap;
+}
 .header {
     margin-top: 150px;
 }
@@ -522,6 +576,10 @@ body {
     line-height: 20px;
     padding: 0px 15px 0px 15px;
     font-size: 16px;
+}
+.pane-about-us .pane-title{
+    margin-left: 137px;
+    padding-top: 20px;
 }
 
 .inside.panels-flexible-row-inside.panels-flexible-row-6-main-row-inside.panels-flexible-row-inside-first.clearfix  {
@@ -606,9 +664,21 @@ body {
     margin-bottom: 14px;
 }
 
-@media screen and (max-width: 640px) {
-    .pane-about-us{
+
+ @media screen and (max-width: 640px) {
+  .pane-about-us{
         width:94%;
+    }
+    .views-field-field-company-logo {
+
+    float: none;
+}
+.pane-about-us .pane-title
+{
+    margin-left: 9px;
+}
+     .video >p{
+        margin: 0 0px;
     }
     .block1 .views-field-field-blog-image {
         float: none;
@@ -695,10 +765,10 @@ body {
         font-size: 24px;
         line-height: 30px;
     }
-    .front-sponsors {
+    .sponsors {
         width: 40%;
     }
-    .offer .views-row{
+   .offer .views-row{
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
@@ -714,7 +784,6 @@ body {
     margin-left: 31px;
 }
 }
-
 @media screen and (min-width: 640px) and (max-width: 1024px) {
     .block2 .views-more-link {
         margin-left: 33px;
@@ -753,6 +822,11 @@ body {
         height: 100px;
         overflow: hidden;
     }
-
+    .video >p {
+        margin: 0px;
+    }
+.pane-about-us .pane-title{
+    margin-left: 62px;
+}
 
 }

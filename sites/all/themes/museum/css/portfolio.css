@@ -6,7 +6,9 @@
     padding-bottom: 5%;
 }
 
-li.category-1.isotope-element {
+li.category-1.isotope-element,
+li.category-2.isotope-element,
+li.category-3.isotope-element {
     float: left;
     width: 25%;
     position: relative;

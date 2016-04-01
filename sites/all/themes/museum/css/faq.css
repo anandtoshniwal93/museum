@@ -12,6 +12,7 @@
     text-transform: uppercase;
     font: 400 14px/20px 'Adamina', serif;
     margin-bottom: 10px;
+    text-decoration: none;
 }
 .faq a:hover{
    color: #21B7E9;

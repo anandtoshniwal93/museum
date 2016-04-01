@@ -200,10 +200,10 @@ function faq_panel_default_page_manager_pages() {
     $display->content['new-88261c93-df9a-4c74-8907-27e1b90c4bfd'] = $pane;
     $display->panels['sidebar_1'][0] = 'new-88261c93-df9a-4c74-8907-27e1b90c4bfd';
     $pane = new stdClass();
-    $pane->pid = 'new-b83ffce5-7aee-4a9e-86a7-9f4fc025648b';
+    $pane->pid = 'new-dd25d4ea-69f1-4685-a41c-861575a7bdbf';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_22';
+    $pane->subtype = 'advpoll-advpoll_block_29';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -222,9 +222,9 @@ function faq_panel_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'b83ffce5-7aee-4a9e-86a7-9f4fc025648b';
-    $display->content['new-b83ffce5-7aee-4a9e-86a7-9f4fc025648b'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-b83ffce5-7aee-4a9e-86a7-9f4fc025648b';
+    $pane->uuid = 'dd25d4ea-69f1-4685-a41c-861575a7bdbf';
+    $display->content['new-dd25d4ea-69f1-4685-a41c-861575a7bdbf'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-dd25d4ea-69f1-4685-a41c-861575a7bdbf';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
   $handler->conf['display'] = $display;
