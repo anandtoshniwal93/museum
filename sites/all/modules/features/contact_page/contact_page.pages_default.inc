@@ -37,7 +37,7 @@ function contact_page_default_page_manager_pages() {
     'pipeline' => 'standard',
     'body_classes_to_remove' => '',
     'body_classes_to_add' => '',
-    'css_id' => '',
+    'css_id' => 'contactinfo',
     'css' => '',
     'contexts' => array(),
     'relationships' => array(),
@@ -70,17 +70,10 @@ function contact_page_default_page_manager_pages() {
         'contains' => 'region',
         'children' => array(
           0 => 'info',
-          1 => 'center',
+          1 => 'contact_form',
         ),
         'parent' => 'main',
-      ),
-      'center' => array(
-        'type' => 'region',
-        'title' => 'Form',
-        'width' => 50,
-        'width_type' => '%',
-        'parent' => 'main-row',
-        'class' => '',
+        'class' => 'container-12',
         'hide_empty' => 0,
       ),
       1 => array(
@@ -90,16 +83,7 @@ function contact_page_default_page_manager_pages() {
           0 => 'map',
         ),
         'parent' => 'main',
-        'class' => 'Map',
-        'hide_empty' => 0,
-      ),
-      'info' => array(
-        'type' => 'region',
-        'title' => 'Info',
-        'width' => 50,
-        'width_type' => '%',
-        'parent' => 'main-row',
-        'class' => '',
+        'class' => 'Map container-12',
         'hide_empty' => 0,
       ),
       'map' => array(
@@ -111,15 +95,42 @@ function contact_page_default_page_manager_pages() {
         'class' => '',
         'hide_empty' => 0,
       ),
+      'info' => array(
+        'type' => 'region',
+        'title' => 'Info',
+        'width' => '39.31220922922168',
+        'width_type' => '%',
+        'parent' => 'main-row',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
+      'contact_form' => array(
+        'type' => 'region',
+        'title' => 'Contact Form',
+        'width' => '60.68779077077832',
+        'width_type' => '%',
+        'parent' => 'main-row',
+        'class' => '',
+        'hide_empty' => 0,
+      ),
     ),
   );
   $display->panel_settings = array(
     'style_settings' => array(
-      'default' => NULL,
+      'default' => array(
+        'separator' => array(
+          'active' => 1,
+          'element_type' => '',
+          'show_css' => 1,
+          'element_class' => 'contact',
+        ),
+      ),
       'center' => NULL,
       'info' => NULL,
       'map' => NULL,
+      'contact_form' => NULL,
     ),
+    'style' => 'semantic_panels',
   );
   $display->cache = array();
   $display->title = '';
@@ -127,8 +138,8 @@ function contact_page_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-17aabc64-e5bf-47df-90d7-aa2bb531e3cb';
-    $pane->panel = 'center';
+    $pane->pid = 'new-4886ee92-4d0c-4202-9041-995be9866c97';
+    $pane->panel = 'contact_form';
     $pane->type = 'block';
     $pane->subtype = 'webform-client-block-26';
     $pane->shown = TRUE;
@@ -146,19 +157,19 @@ function contact_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '17aabc64-e5bf-47df-90d7-aa2bb531e3cb';
-    $display->content['new-17aabc64-e5bf-47df-90d7-aa2bb531e3cb'] = $pane;
-    $display->panels['center'][0] = 'new-17aabc64-e5bf-47df-90d7-aa2bb531e3cb';
+    $pane->uuid = '4886ee92-4d0c-4202-9041-995be9866c97';
+    $display->content['new-4886ee92-4d0c-4202-9041-995be9866c97'] = $pane;
+    $display->panels['contact_form'][0] = 'new-4886ee92-4d0c-4202-9041-995be9866c97';
     $pane = new stdClass();
-    $pane->pid = 'new-a4091454-91b3-4f02-8033-492a17fb6b5c';
+    $pane->pid = 'new-78fec34a-f21f-485f-bde8-5a81126e84a1';
     $pane->panel = 'info';
-    $pane->type = 'block';
-    $pane->subtype = 'block-3';
+    $pane->type = 'panels_mini';
+    $pane->subtype = 'contact_info';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => 'Contact Info',
+      'override_title' => 0,
+      'override_title_text' => '',
       'override_title_heading' => 'h2',
     );
     $pane->cache = array();
@@ -169,11 +180,11 @@ function contact_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'a4091454-91b3-4f02-8033-492a17fb6b5c';
-    $display->content['new-a4091454-91b3-4f02-8033-492a17fb6b5c'] = $pane;
-    $display->panels['info'][0] = 'new-a4091454-91b3-4f02-8033-492a17fb6b5c';
+    $pane->uuid = '78fec34a-f21f-485f-bde8-5a81126e84a1';
+    $display->content['new-78fec34a-f21f-485f-bde8-5a81126e84a1'] = $pane;
+    $display->panels['info'][0] = 'new-78fec34a-f21f-485f-bde8-5a81126e84a1';
     $pane = new stdClass();
-    $pane->pid = 'new-5a274634-6e70-4606-9c97-d891809acfb1';
+    $pane->pid = 'new-b991624c-0637-4544-8fe8-b441ccdc8043';
     $pane->panel = 'map';
     $pane->type = 'block';
     $pane->subtype = 'locationmap-image';
@@ -192,11 +203,11 @@ function contact_page_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '5a274634-6e70-4606-9c97-d891809acfb1';
-    $display->content['new-5a274634-6e70-4606-9c97-d891809acfb1'] = $pane;
-    $display->panels['map'][0] = 'new-5a274634-6e70-4606-9c97-d891809acfb1';
+    $pane->uuid = 'b991624c-0637-4544-8fe8-b441ccdc8043';
+    $display->content['new-b991624c-0637-4544-8fe8-b441ccdc8043'] = $pane;
+    $display->panels['map'][0] = 'new-b991624c-0637-4544-8fe8-b441ccdc8043';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-17aabc64-e5bf-47df-90d7-aa2bb531e3cb';
+  $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
   $pages['Contact '] = $page;
