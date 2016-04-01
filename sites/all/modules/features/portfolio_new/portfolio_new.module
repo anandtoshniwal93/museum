@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Portfolio new feature.
- */
-
-include_once 'portfolio_new.features.inc';
