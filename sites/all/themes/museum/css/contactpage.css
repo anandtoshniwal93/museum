@@ -1,234 +1,179 @@
-.pane-title{
-      font-size: 40px;
-      padding-bottom: 30px;
-}
 
-.panels-flexible-new-inside{
-       margin-left: 150px;
+#contact-page{
+ width: 1050px;
+ margin: 0 auto;
 }
-
-.contextual-links-region {
-    margin-top: 35px;
-      }
-
-.panel-pane h1 {
-       font-size: xx-large;
-       line-height: normal;
-       color:black;
-       font: 400 23px/30px 'Adamina', serif;
-       margin-bottom: 14px;
-}
-
-.webform-component--name , .webform-component--email , .webform-component--subject {
-            display: inline;
-            margin-right: 60px;
-}
-
-.webform-component--message{
-     width: 687px;
-     padding-top: 5px;
-}
-.contextual-links-region.panel-pane.pane-block.pane-block-3 p {
-    padding-top: 15px;
-}
-
-.pane-title {
-           color:black;
-}
-#locationmap_map {
-            width: 99% !important;
-          }
-
-.webform-submit {background: #4d5057;
-    padding: 8px;
-    border-radius: 13px;
-    border: none;
-    border-radius: 21px;
-    box-shadow: none;
-    color: #fff;
-    display: inline-block;
-    font: 400 19px/22px 'Adamina', serif;
-    outline: none;
-    padding: 9px 28px 13px;
-    text-decoration: none;
-    text-transform: lowercase;
-}
-
-.webform-submit:hover {
-            background:#21B7E9;
-}
-
-// @media (max-width: 416px)
-// {
-//   body{
-//      position: absolute;
-//      left: 0px;
-//      top: 0px;
-//      z-index: 3;
-//      width: 100%;
-//    }
-// }
-
-body {
-     width: 100%;
-}
-
-#content{
-  margin: auto;
-  width: 75%;
-  padding:0;
-}
-.panel-flexible-inside .panels-flexible-22-inside{
-  margin:0 auto;
-  min-width: 1156px;
-  padding: 0px;
-  margin-left: 190px;
-}
-
-.panels-flexible-22 .panels-flexible-row {
-    padding: 0 0 2.5em 0;
-    margin: 0;
-}
-
-.panel-flexible-inside {
-          width: 100%;
-
-}
-.required {
-      border: 1px solid #d8d8da;
-}
-
 #main {
-      background-color: white;
+     background: #ffffff;
 }
+#contact-page  .pane-title {
+       font-size: 40px;
+}
+#contact-page  .panels-flexible-new-inside  {
+        margin-left: 150px;
+ }
+ #contact-page  .panels-flexible-row-25-main-row  {
+         margin-top: 35px;
+ }
 
-@media only screen and (max-width: 1024px){
-#content {
-      width: 90%;
-      box-sizing: border-box;
-      position: relative;
-      margin: auto;
-       }
-.webform-component--name , .webform-component--email , .webform-component--subject {
-            display: inline;
-          }
-#main {
-  width: 100%;
-  margin: auto;
-   }
+#contact-page   .panel-pane  h1 {
+        font-size: xx-large;
+        line-height: normal;
+        color:black;
+        font: 400 23px/30px 'Adamina', serif;
+        margin-bottom: 14px;
+ }
+#contact-page .webform-component--name ,
+.webform-component--email ,
+.webform-component--subject {
+             display: inline;
+             margin-right: 37px;
+ }
+#contact-page   .pane-title {
+                   color:black;
 }
+#contact-page  #locationmap_map  {
+             width: 99% !important;
+           }
 
-@media only screen and (max-width: 770px){
-#content {
-     width: 100%;
-     margin: 10px;
+#contact-page  .webform-submit {
+     background: #4d5057;
+     padding: 8px;
+     border-radius: 13px;
+     border: none;
+     border-radius: 21px;
+     box-shadow: none;
+     color: #fff;
+     display: inline-block;
+     font: 400 19px/22px 'Adamina', serif;
+     outline: none;
+     padding: 9px 28px 13px;
+     text-decoration: none;
+     text-transform: lowercase;
 }
-.contextual-links-region {
-     width: 98%;
+#contact-page  .webform-submit:hover {
+          background:#21B7E9;
 }
-.map #locationmap_map{
-    margin: 0px;
-    position: fixed;
-    overflow: hidden;
-    background-color: rgb(229, 227, 223);
-    width: 99% !important;
-    text-align: center;
-  }
-  .map{
-    width:100%;
-    margin-bottom: 10px;
-}
-.panels-flexible-22 .panels-flexible-row {
-     padding: 0 0 3.5em 0;
-}
-.clearfix {
-      height
-}
-.map h2 {
-      font: 400 50px/40px 'Adamina', serif;
-      margin-bottom: 30px;
-}
-.inside {
-       font-size: x-large;
-       line-height: normal;
-}
-.required {
-    width: 200px;
-    font-size: xx-large;
-    border: 2px solid #d8d8da;
-}
-.webform-submit {
-     font-size: xx-large;
-     height: 65px;
-}
-.webform-component--name , .webform-component--email , .webform-component--subject {
-            display: inline;
-            margin-right: 37px;
-}
-}
+#contact-page  .panel-flexible-inside .panels-flexible-22-inside{
+   margin:0 auto;
+   min-width: 1156px;
+   padding: 0px;
+   margin-left: 190px;
+ }
 
-@media only screen and (max-width: 425px){
-#content {
-     float:none;
-     width: 90%;
-      }
-.inside {
-       font-size: x-large;
-       line-height: normal;
-       width: 98%;
-}
-.clearfix {
-      width:103%;
-}
-.panels-flexible-region {
+ #contact-page .panel-flexible-inside .panels-flexible-22-inside {
+   margin:0 auto;
+   min-width: 1156px;
+   padding: 0px;
+   margin-left: 190px;
+ }
+
+ #contact-page .panels-flexible-22 .panels-flexible-row {
+     padding: 0 0 2.5em 0;
+     margin: 0;
+ }
+
+ #contact-page .panel-flexible-inside {
            width: 100%;
-}
-.pane-title {
-        font-size: 150px;
-        padding-left: 20px;
-}
-.panel-pane h1 {
-          font-size: 91px;
-          line-height: normal;
-          padding-left: 27px;
-}
-.contextual-links-region  p {
-         font-size: 50px;
-         padding-left: 35px;
-         padding-top: 40px;
 
-}
-.required {
-      font-size: 100px;
-    width: initial;
-    padding-bottom: 45px;
-    padding-top: 32px;
-    padding-left: 35px;
-    border: 5px solid #d8d8da;
-}
-.form-textarea-wrapper {
-     width: 100%;
-}
-.webform-submit {
-     font-size: 80px;
-     height: 125px;
-}
-.email {
-         margin-bottom: inherit;
-         margin-top: inherit;
-}
-#locationmap_map {
-       overflow: hidden;
-       text-align: center;
-}
-.gm-style {
-       overflow: hidden;
-       text-align: center;
-       position: absolute;
-}
-.gmnoprint {
-      position: absolute;
-      overflow: hidden;
-}
+ }
+ #contact-page .required {
+       border: 1px solid #d8d8da;
+ }
+ #contact-page  .panel-pane p {
+          line-height: 1.25;
+          margin-bottom: 25px;
 }
 
+ @media only screen and (max-width: 770px){
+  #contact-page {
+      width: 99%;
+      margin: 4px auto;
+      padding-left: 5px;
+ }
+#contact-page .contextual-links-region {
+      width: 98%;
+ }
+#contact-page .map #locationmap_map{
+     margin: 0px;
+     position: fixed;
+     overflow: hidden;
+     background-color: rgb(229, 227, 223);
+     width: 99% !important;
+     text-align: center;
+   }
+#contact-page  .map{
+     width:100%;
+     margin-bottom: 10px;
+ }
+#contact-page .panels-flexible-22 .panels-flexible-row {
+      padding: 0 0 3.5em 0;
+ }
+#contact-page .map h2 {
+       font: 400 50px/40px 'Adamina', serif;
+       margin-bottom: 30px;
+ }
+#contact-page .inside {
+        font-size: x-large;
+        line-height: normal;
+ }
+#contact-page .required {
+     width: 200px;
+     font-size: initial;
+     border: 2px solid #d8d8da;
+ }
+#contact-page .webform-submit {
+     font-size: large;
+     height: 50px;
+ }
+#contact-page #webform-client-form-26 .form-text  {
+             display: inline;
+             width: 135px;
+
+ }
+ #contact-page #webform-client-form-26 .form-textarea  {
+              width: 510px;
+ }
+ #contact-page .panel-pane p {
+           font-size: 18px;
+ }
+ }
+
+ @media only screen and (max-width: 425px){
+ #contact-page {
+      width: 90%;
+      margin:0 auto;
+       }
+ #contact-page .inside {
+        font-size: x-large;
+        line-height: normal;
+        width: 98%;
+ }
+
+#contact-page .panels-flexible-region {
+            width: 100%;
+ }
+
+#contact-page .form-textarea-wrapper {
+      width: 100%;
+ }
+#contact-page .webform-submit {
+      font-size: 80px;
+      height: 125px;
+ }
+#contact-page .email {
+          margin-bottom: 20px;
+          margin-top: 20px;
+ }
+
+#contact-page  .inside {
+          padding-left: 0px;
+}
+#contact-page #webform-client-form-26 .form-text {
+          width: 98%;
+}
+#contact-page .webform-submit {
+     font-size: 24px;
+     height: 46px;
+ }
+ }
