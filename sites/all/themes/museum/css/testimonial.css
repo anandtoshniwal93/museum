@@ -12,8 +12,10 @@
 }
 
 .testimonial .views-row {
-  clear: both;
+    clear: both;
     min-height: 180px;
+    width: 85%;
+    padding-left: 0%;
 }
 
 .testimonial .views-field.views-field-field-author-name,

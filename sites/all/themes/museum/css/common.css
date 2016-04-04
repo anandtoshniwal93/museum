@@ -64,8 +64,8 @@ time:before{
 }
 
 p{
-  padding-bottom: 3%;
-    padding-top: 2%;
+  padding-bottom: 1%;
+    padding-top: 1%;
 }
 
 .field.field-name-field-faq-question.field-type-text.field-label-hidden{
@@ -78,15 +78,23 @@ a:hover{
 }
 
 .comment-form{
-  padding-left: 0%;
+  padding-left: 10%;
     padding-right: 35%;
 }
 
+#comments{
+  margin-left: -10%;
+}
 .taxonomy-term-description {
     margin: 5px 0 20px;
     padding-left: 10%;
     text-transform: capitalize;
+}
 
+.node-advpoll{
+  padding-left: 10%;
+    padding-right: 40%;
+}
 @media screen and (min-width: 320px) and (max-width: 640px) {
 
   .node-readmore a, .blog_usernames_blog a, .comment-add a, .comment_forbidden a{

@@ -25,6 +25,12 @@
   font:'Adamina', serif;
 }
 
+.blog-node .node{
+  padding-left: 0%;
+    padding-right: 10%;
+
+}
+
 
 
 .blog-node .field-label-inline .field-label{
