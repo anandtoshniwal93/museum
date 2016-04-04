@@ -1,6 +1,7 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 
+
 #main #blognode {
   background: white;
     padding-left: 8%;
@@ -22,6 +23,12 @@
   margin: 0 0 15px;
   line-height: 21px;
   font:'Adamina', serif;
+}
+
+.blog-node .node{
+  padding-left: 0%;
+    padding-right: 10%;
+
 }
 
 

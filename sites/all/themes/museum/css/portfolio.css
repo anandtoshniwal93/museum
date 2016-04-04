@@ -1,6 +1,6 @@
 #main .porto {
   background: white;
-    padding-left: 8%;
+    padding-left: 12%;
     padding-right: 8%;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -134,6 +134,11 @@ li.category-3.isotope-element {
     padding: 0;
     background: none;
 }
+
+.porto .field-content{
+    padding-left: 10%;
+}
+
 }
 
 @media screen and (min-width: 640px) and (max-width: 1024px){
@@ -165,6 +170,10 @@ li.category-3.isotope-element {
     padding-right: 8%;
     padding-top: 5%;
     padding-bottom: 5%;
+}
+
+.porto .field-content{
+    padding-left: 19%;
 }
 
 }

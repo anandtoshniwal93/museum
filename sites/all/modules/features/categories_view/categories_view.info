@@ -1,4 +1,4 @@
-name = Categories view
+name = Categories
 description = sort blogs by categories
 core = 7.x
 package = Features
