@@ -62,6 +62,7 @@ stylesheets[all][] = css/testimonial.css
 stylesheets[all][] = css/portfolio.css
 stylesheets[all][] = css/archive.css
 stylesheets[all][] = css/common.css
+stylesheets[all][] = css/test.css
 
 
 
