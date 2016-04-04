@@ -4,7 +4,7 @@ body {
     color: #777;
 }
 
-#bloglist {
+#main #bloglist {
     background: white;
     padding-left: 8%;
     padding-right: 8%;
@@ -44,6 +44,10 @@ a {
   display: none;
 }
 
+.submitted{
+  padding-top: 3%;
+}
+
 .blogs-list p {
     display: block;
     -webkit-margin-before: 1em;
@@ -56,6 +60,9 @@ a {
     padding-bottom: 21%;
 }
 
+.blogs-list .node{
+  padding:0%;
+}
 .blogs-list img{
       padding-top: 2%;
 }
@@ -318,6 +325,7 @@ a {
     .blogs-list h6 {
         padding-top: 5%;
     }
+
 }
 
 @media screen and (min-width: 640px) and (max-width: 1024px) {
