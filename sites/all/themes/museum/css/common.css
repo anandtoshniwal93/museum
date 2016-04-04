@@ -92,8 +92,8 @@ a:hover{
 }
 
 .node-advpoll{
-  padding-left: 10%;
-    padding-right: 40%;
+  padding-left: 20%;
+    padding-right: 20%;
 }
 @media screen and (min-width: 320px) and (max-width: 640px) {
 
@@ -114,5 +114,15 @@ a:hover{
    time:before{
     margin-right: 2%;
   }
+
+  .node-advpoll {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .comment-form {
+    padding-left: 10%;
+    padding-right: 20%;
+}
 
 }
