@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * faq_panel.views_default.inc
+ * static_pages.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function faq_panel_views_default_views() {
+function static_pages_views_default_views() {
   $export = array();
 
   $view = new view();

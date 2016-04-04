@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * contact_page.features.inc
+ * static_pages.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function contact_page_ctools_plugin_api($module = NULL, $api = NULL) {
+function static_pages_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -20,10 +20,25 @@ function contact_page_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function static_pages_views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
-function contact_page_node_info() {
+function static_pages_node_info() {
   $items = array(
+    'faq_s' => array(
+      'name' => t('FAQ\'s'),
+      'base' => 'node_content',
+      'description' => '',
+      'has_title' => '1',
+      'title_label' => t('Title'),
+      'help' => '',
+    ),
     'webform' => array(
       'name' => t('Webform'),
       'base' => 'node_content',

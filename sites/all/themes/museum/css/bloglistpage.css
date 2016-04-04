@@ -40,6 +40,10 @@ a {
     float: left;
 }
 
+.blogs-list .submitted{
+  display: none;
+}
+
 .blogs-list p {
     display: block;
     -webkit-margin-before: 1em;
@@ -52,9 +56,16 @@ a {
     padding-bottom: 21%;
 }
 
-.blogs-list .submitted {
-    display: none;
+.blogs-list img{
+      padding-top: 2%;
 }
+
+.blogs-list .field.field-name-field-blog-categories.field-type-taxonomy-term-reference.field-label-above{
+  display: none;
+}
+
+
+
 
 .poll .submitted,
 .poll .poll-message {

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * contact_page.strongarm.inc
+ * static_pages.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function contact_page_strongarm() {
+function static_pages_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
