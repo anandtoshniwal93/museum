@@ -210,6 +210,14 @@ a {
     text-transform: lowercase;
 }
 
+.pager-item a:hover,
+.pager-next a:hover,
+.pager-last a:hover,
+.pager-first a:hover,
+.pager-previous a:hover{
+  color: inherit;
+}
+
 .pager-current {
     background: #21B7E9;
     padding: 8px;
