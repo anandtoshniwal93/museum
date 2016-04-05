@@ -73,6 +73,10 @@ li.category-3.isotope-element {
     text-transform: lowercase;
 }
 
+.port-head a:hover{
+  color:inherit;
+}
+
 .porto .views-field.views-field-title .field-content{
     color: #31353d;
     text-transform: uppercase;

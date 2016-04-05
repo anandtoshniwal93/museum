@@ -55,7 +55,7 @@
 }
 
 
-.blog-node .blog_usernames_blog, .blog-node .comment_forbidden a,
+.blog-node .blog_usernames_blog a, .blog-node .comment_forbidden a,
 .porto .views-more-link{
   background: #4d5057;
     padding: 8px;
@@ -71,7 +71,7 @@
     text-decoration: none;
     text-transform: lowercase;
 }
-.blog-node .blog_usernames_blog:hover, .blog-node .comment_forbidden a:hover{
+.blog-node .blog_usernames_blog a:hover, .blog-node .comment_forbidden a:hover{
   background-color: #21B7E9;
   padding: 8px;
     border-radius: 13px;
