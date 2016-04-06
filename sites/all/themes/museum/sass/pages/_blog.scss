@@ -26,6 +26,9 @@ a {
   #testimo{
     @include bg-basic;
   }
+  #archivelist{
+    @include bg-basic;
+  }
 }
 
 h2{
@@ -35,6 +38,22 @@ h2{
 h6{
   @include heading6;
 }
+
+.archive{
+      .view-content{
+          li{
+              list-style-type: none;
+            a{
+              background: url(../images/star-3.png) 0 6px no-repeat;
+              padding-left: 20px;
+            }
+            a:hover{
+              color: $hover-color;
+            }
+          }
+  }
+}
+
 .blogs-list, .sponsor, .testimonial{
   img{
         @include img_panels;
@@ -47,12 +66,6 @@ h6{
   }
   .field.field-name-field-blog-categories.field-type-taxonomy-term-reference.field-label-above{
     display:none;
-  }
-}
-
-.blog-node{
-  .field-label-inline .field-label{
-  display: none;
   }
 }
 
@@ -71,18 +84,10 @@ h6{
        a{
         @include button_style($a-color, $white);
       }
-    }
-}
-
-.blogs-list{
-  .node-readmore,
-  .blog_usernames_blog,
-  .comment-add,
-  .comment_forbidden{
       a:hover{
-          @include button_style($hover-color,$white);
+        @include button_style($hover-color,$white);
       }
-   }
+    }
 }
 
 .blogs-list .inline {
@@ -92,15 +97,115 @@ h6{
     padding-top: 5%;
 }
 
-.blogs-list li{
-  display: inline-block;
-}
+.blogs-list, .blog-node{
+     li{
+      display: inline-block;
+    }
+  }
 
 .blogs-list{
   .views-field.views-field-created:before{
+    @include font_icon($date-font-code);
+  }
+  .views-field.views-field-name:before{
+    @include font_icon($user-font-code);
+  }
+  .views-field.views-field-comment-count:before{
     @include font_icon($comment-font-code);
   }
 }
+
+.blog-node p{
+  margin-bottom: 22px;
+  margin: 0 0 15px;
+  line-height: 21px;
+  font:$body-font-family;
+}
+
+.blog-node .node{
+  padding-left: 0%;
+    padding-right: 10%;
+
+}
+
+.blog-node{
+  .field-label-inline .field-label{
+  display: none;
+  }
+}
+
+.blog-node{
+  .username:before{
+    @include font_icon($user-font-code);
+  }
+  time:before{
+    @include font_icon($date-font-code);
+  }
+}
+
+.blog-node{
+  .blog_usernames_blog,
+  .comment_forbidden{
+    a{
+        @include button_style($a-color, $white);
+    }
+    a:hover{
+      @include button_style($hover-color,$white);
+    }
+  }
+}
+
+.categories .views-row {
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    background: url(../images/star-3.png) 0 6px no-repeat;
+    padding-left: 20px;
+    a:hover{
+      color: $hover-color;
+    }
+}
+
+.faq {
+    a{
+      color: $text-color;
+      text-transform: uppercase;
+      font: 400 14px/20px $body-font-family;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    a:hover{
+      color: $hover-color;
+    }
+    p{
+      margin-top: 2%;
+      margin-bottom: 2%;
+      line-height: 150%;
+      font: $body-font-family;
+    }
+}
+
+.pager-item,
+.pager-next,
+.pager-last,
+.pager-first,
+.pager-previous {
+  @include button_style($a-color, $white);
+}
+
+.pager-item,
+.pager-next,
+.pager-last,
+.pager-first,
+.pager-previous {
+  a:hover{
+    @include button_style($hover-color,$white);
+  }
+}
+
+.pager-current {
+  @include button_style($hover-color,$white);
+}
+
 
 .poll{
   .submitted{
@@ -122,10 +227,10 @@ h6{
 .poll{
   .bar{
     .foreground {
-      background-color: #21B7E9;
+      background-color: $hover-color;
       height: 16px;
       float: left;
-      border-color: #777;
+      border-color: $grey;
   }
  }
 }
@@ -150,6 +255,10 @@ h6{
     padding: 1px;
 }
 
+.poll .node{
+  padding-left: 0%;
+    padding-right: 10%;
+}
 
 .pager {
     clear: both;
@@ -158,24 +267,29 @@ h6{
     text-align: center;
 }
 
-.pager-item,
-.pager-next,
-.pager-last,
-.pager-first,
-.pager-previous {
-  @include button_style($a-color, $white);
+.testimonial{
+    .field-content{
+        img{
+          float:left;
+          padding-right: 5%;
+        }
+        p:hover{
+          color: #21B7E9;
+        }
+    }
+    .views-row {
+        clear: both;
+        min-height: 180px;
+        width: 85%;
+        padding-left: 0%;
+    }
+    .views-field.views-field-field-author-name,
+    .views-field.views-field-field-relation{
+      float: right;
+      clear: inherit;
+    }
+    p{
+      padding-top:1%;
+    }
 }
 
-.pager-item,
-.pager-next,
-.pager-last,
-.pager-first,
-.pager-previous {
-  a:hover{
-    @include button_style($hover-color,$white);
-  }
-}
-
-.pager-current {
-  @include button_style($hover-color,$white);
-}
