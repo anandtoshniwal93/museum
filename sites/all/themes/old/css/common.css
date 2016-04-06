@@ -97,7 +97,10 @@ a:hover{
 }
 @media screen and (min-width: 320px) and (max-width: 640px) {
 
-  .node-readmore a, .blog_usernames_blog a, .comment-add a, .comment_forbidden a{
+  .node-readmore a,
+  .blog_usernames_blog a,
+  .comment-add a,
+  .comment_forbidden a{
     margin-top:2%;
   }
 

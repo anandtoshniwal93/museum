@@ -53,17 +53,17 @@ stylesheets[all][] = system.theme.css
 ;stylesheets[all][] = css/boilerplate.css
 ;stylesheets[all][] = css/skeleton.css
 stylesheets[all][] = css/styles.css
-stylesheets[all][] = css/reset.css
-stylesheets[all][] = css/frontpage.css
-stylesheets[all][] = css/bloglistpage.css
-stylesheets[all][] = css/blognodepage.css
-stylesheets[all][] = css/faq.css
-stylesheets[all][] = css/testimonial.css
-stylesheets[all][] = css/portfolio.css
-stylesheets[all][] = css/archive.css
-stylesheets[all][] = css/contactpage.css
-stylesheets[all][] = css/common.css
-stylesheets[all][] = css/test.css
+;stylesheets[all][] = css/reset.css
+;stylesheets[all][] = css/frontpage.css
+;stylesheets[all][] = css/bloglistpage.css
+;stylesheets[all][] = css/blognodepage.css
+;stylesheets[all][] = css/faq.css
+;stylesheets[all][] = css/testimonial.css
+;stylesheets[all][] = css/portfolio.css
+;stylesheets[all][] = css/archive.css
+;stylesheets[all][] = css/contactpage.css
+;stylesheets[all][] = css/common.css
+;stylesheets[all][] = css/variables.css
 
 
 

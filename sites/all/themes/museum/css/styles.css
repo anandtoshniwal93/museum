@@ -1,22 +1,563 @@
-/**
- * @file
- * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
- *
- * When you turn on CSS aggregation at admin/config/development/performance, all
- * of these @include files will be combined into a single file.
- */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(//fonts.googleapis.com/css?family=Ewert);
+@import url(http://fonts.googleapis.com/css?family=Maiden+Orange);
+@import url(https://fonts.googleapis.com/css?family=Pontano+Sans|Bevan);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
 
-/* HTML element (SMACSS base) rules */
-@import "normalize.css";
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
 
-/* Layout rules */
-@import "layouts/responsive.css";
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
 
-/* Component (SMACSS module) rules */
-@import "components/misc.css";
-/* Optionally, add your own components here. */
-@import "print.css";
+[hidden],
+template {
+  display: none;
+}
 
-/* SMACSS theme rules */
-/* @import "theme-A.css"; */
-/* @import "theme-B.css"; */
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* Makes border-box properties */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.panels-flexible-column {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.panels-flexible-column:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media screen {
+  .panels-flexible-column-first {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .panels-flexible-column-first {
+    width: 74.68354%;
+    float: left;
+    margin-right: 1.26582%;
+  }
+}
+@media screen {
+  .panels-flexible-column-last {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .panels-flexible-column-last {
+    width: 24.05063%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+body {
+  font-family: "Adamina", serif;
+  color: #777;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#main #bloglist {
+  background: #ffffff;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#main #sponsors {
+  background: #ffffff;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#main #blognode {
+  background: #ffffff;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#main #faqmain {
+  background: #ffffff;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#main .porto {
+  background: #ffffff;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#main #testimo {
+  background: #ffffff;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+h2 {
+  color: #31353d;
+  font: 400 32px/40px "Adamina", serif;
+  margin-bottom: 30px;
+}
+
+h6 {
+  color: #31353d;
+  text-transform: uppercase;
+  font: 400 12px/20px "Adamina", serif;
+  margin-bottom: 10px;
+  font-size: 91%;
+  margin-top: 5%;
+}
+
+.blogs-list img, .sponsor img, .testimonial img {
+  box-sizing: border-box;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  float: left;
+  padding-top: 2%;
+}
+
+.blogs-list .submitted {
+  display: none;
+}
+.blogs-list .field.field-name-field-blog-categories.field-type-taxonomy-term-reference.field-label-above {
+  display: none;
+}
+
+.blog-node .field-label-inline .field-label {
+  display: none;
+}
+
+.blogs-list p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  padding-left: 35%;
+  PADDING-RIGHT: 10%;
+  line-height: 25px;
+  padding-bottom: 21%;
+}
+
+.blogs-list .node-readmore a,
+.blogs-list .blog_usernames_blog a,
+.blogs-list .comment-add a,
+.blogs-list .comment_forbidden a {
+  background: #4d5057;
+  padding: 8px;
+  border-radius: 21px;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font: 400 19px/22px 'Adamina', serif;
+  outline: none;
+  padding: 9px 28px 13px;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 5%;
+}
+
+.blogs-list .node-readmore a:hover,
+.blogs-list .blog_usernames_blog a:hover,
+.blogs-list .comment-add a:hover,
+.blogs-list .comment_forbidden a:hover {
+  background: #21B7E9;
+  padding: 8px;
+  border-radius: 21px;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font: 400 19px/22px 'Adamina', serif;
+  outline: none;
+  padding: 9px 28px 13px;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 5%;
+}
+
+.blogs-list .inline {
+  display: block;
+  padding: 0;
+  clear: both;
+  padding-top: 5%;
+}
+
+.blogs-list li {
+  display: inline-block;
+}
+
+.blogs-list .views-field.views-field-created:before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  content: "$code";
+  color: #21B7E9;
+  font-size: smaller;
+}
+
+.poll .submitted {
+  display: none;
+}
+.poll .poll-message {
+  display: none;
+}
+
+.poll .node-title {
+  margin-bottom: 15px;
+  font-size: larger;
+  color: #777;
+}
+
+.poll .bar .foreground {
+  background-color: #21B7E9;
+  height: 16px;
+  float: left;
+  border-color: #777;
+}
+
+.poll .comment_forbidden a, .poll input[type="submit"] {
+  background: #4d5057;
+  padding: 8px;
+  border-radius: 21px;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font: 400 19px/22px 'Adamina', serif;
+  outline: none;
+  padding: 9px 28px 13px;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 5%;
+}
+
+.poll .comment_forbidden a:hover, .poll input[type="submit"]:hover {
+  background: #21B7E9;
+  padding: 8px;
+  border-radius: 21px;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font: 400 19px/22px 'Adamina', serif;
+  outline: none;
+  padding: 9px 28px 13px;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 5%;
+}
+
+.poll .bar {
+  background-color: #ffffff;
+  border: 1px solid #d8d8da;
+  height: 20px;
+  margin-bottom: 15px;
+  padding: 1px;
+}
+
+.pager {
+  clear: both;
+  padding-top: 6%;
+  margin-left: -40%;
+  text-align: center;
+}
+
+.pager-item,
+.pager-next,
+.pager-last,
+.pager-first,
+.pager-previous {
+  background: #4d5057;
+  padding: 8px;
+  border-radius: 21px;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font: 400 19px/22px 'Adamina', serif;
+  outline: none;
+  padding: 9px 28px 13px;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 5%;
+}
+
+.pager-item a:hover,
+.pager-next a:hover,
+.pager-last a:hover,
+.pager-first a:hover,
+.pager-previous a:hover {
+  background: #21B7E9;
+  padding: 8px;
+  border-radius: 21px;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font: 400 19px/22px 'Adamina', serif;
+  outline: none;
+  padding: 9px 28px 13px;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 5%;
+}
+
+.pager-current {
+  background: #21B7E9;
+  padding: 8px;
+  border-radius: 21px;
+  border: none;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font: 400 19px/22px 'Adamina', serif;
+  outline: none;
+  padding: 9px 28px 13px;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin-top: 5%;
+}

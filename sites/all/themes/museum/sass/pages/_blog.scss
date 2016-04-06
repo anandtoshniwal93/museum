@@ -1,0 +1,181 @@
+body {
+    font-family: $body-font-family;
+    color: #777;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#main{
+  #bloglist{
+    @include bg-basic;
+  }
+  #sponsors{
+    @include bg-basic;
+  }
+  #blognode{
+    @include bg-basic;
+  }
+  #faqmain{
+    @include bg-basic;
+  }
+  .porto{
+    @include bg-basic;
+  }
+  #testimo{
+    @include bg-basic;
+  }
+}
+
+h2{
+  @include heading2;
+}
+
+h6{
+  @include heading6;
+}
+.blogs-list, .sponsor, .testimonial{
+  img{
+        @include img_panels;
+  }
+}
+
+.blogs-list{
+  .submitted{
+    display:none;
+  }
+  .field.field-name-field-blog-categories.field-type-taxonomy-term-reference.field-label-above{
+    display:none;
+  }
+}
+
+.blog-node{
+  .field-label-inline .field-label{
+  display: none;
+  }
+}
+
+
+.blogs-list{
+  p{
+    @include para-bloglist;
+  }
+}
+
+.blogs-list{
+  .node-readmore,
+  .blog_usernames_blog,
+  .comment-add,
+  .comment_forbidden{
+       a{
+        @include button_style($a-color, $white);
+      }
+    }
+}
+
+.blogs-list{
+  .node-readmore,
+  .blog_usernames_blog,
+  .comment-add,
+  .comment_forbidden{
+      a:hover{
+          @include button_style($hover-color,$white);
+      }
+   }
+}
+
+.blogs-list .inline {
+    display: block;
+    padding: 0;
+    clear: both;
+    padding-top: 5%;
+}
+
+.blogs-list li{
+  display: inline-block;
+}
+
+.blogs-list{
+  .views-field.views-field-created:before{
+    @include font_icon($comment-font-code);
+  }
+}
+
+.poll{
+  .submitted{
+    display:none;
+  }
+  .poll-message{
+    display:none;
+  }
+}
+
+.poll{
+    .node-title {
+    margin-bottom: 15px;
+    font-size: larger;
+    color: $grey;
+  }
+}
+
+.poll{
+  .bar{
+    .foreground {
+      background-color: #21B7E9;
+      height: 16px;
+      float: left;
+      border-color: #777;
+  }
+ }
+}
+
+.poll{
+  .comment_forbidden a,input[type="submit"]{
+    @include button_style($a-color, $white);
+  }
+}
+
+.poll{
+  .comment_forbidden a:hover,input[type="submit"]:hover{
+    @include button_style($hover-color,$white);
+  }
+}
+
+.poll .bar {
+    background-color: $white;
+    border: 1px solid $border-color;
+    height: 20px;
+    margin-bottom: 15px;
+    padding: 1px;
+}
+
+
+.pager {
+    clear: both;
+    padding-top: 6%;
+    margin-left: -40%;
+    text-align: center;
+}
+
+.pager-item,
+.pager-next,
+.pager-last,
+.pager-first,
+.pager-previous {
+  @include button_style($a-color, $white);
+}
+
+.pager-item,
+.pager-next,
+.pager-last,
+.pager-first,
+.pager-previous {
+  a:hover{
+    @include button_style($hover-color,$white);
+  }
+}
+
+.pager-current {
+  @include button_style($hover-color,$white);
+}

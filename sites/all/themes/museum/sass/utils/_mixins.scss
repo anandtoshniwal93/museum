@@ -1,0 +1,71 @@
+@mixin bg-basic{
+    background: $white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@mixin heading2{
+    color: $text-color;
+    font: 400 32px/40px $body-font-family;
+    margin-bottom: 30px;
+}
+
+@mixin heading6{
+    color: $text-color;
+    text-transform: uppercase;
+    font: 400 12px/20px $body-font-family;
+    margin-bottom: 10px;
+    font-size: 91%;
+    margin-top: 5%;
+}
+
+@mixin img_panels{
+    box-sizing: border-box;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    float: left;
+    padding-top: 2%;
+}
+
+@mixin para-bloglist{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    padding-left: 35%;
+    PADDING-RIGHT: 10%;
+    line-height: 25px;
+    padding-bottom: 21%;
+}
+
+@mixin button_style($button-color,$font-color){
+    background: $button-color;
+    padding: 8px;
+    border-radius: 21px;
+    border: none;
+    box-shadow: none;
+    color: $font-color;
+    display: inline-block;
+    font: 400 19px/22px 'Adamina', serif;
+    outline: none;
+    padding: 9px 28px 13px;
+    text-decoration: none;
+    text-transform: lowercase;
+    margin-top: 5%;
+}
+
+@mixin font_icon($code){
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    content: "$code";
+    color: $hover-color;
+    font-size: smaller;
+}
+

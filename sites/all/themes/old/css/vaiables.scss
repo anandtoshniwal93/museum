@@ -1,0 +1,17 @@
+$hover_color:#21B1E9;
+
+@mixin backgroundlayout{
+  background: white;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.categories .views-row a:hover,.blogs-list .field-content a:hover{
+  color:$hover_color;
+}
+
+#main #blognode{
+  @include backgroundlayout;
+}

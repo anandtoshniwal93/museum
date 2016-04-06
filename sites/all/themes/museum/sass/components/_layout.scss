@@ -1,0 +1,40 @@
+@import "susy";
+
+$susy: (
+ flow: ltr,
+ math: fluid,
+ output: float,
+ gutter-position: after,
+ container: auto,
+ container-position: center,
+ columns: 16,/* number of columns */
+ gutters: .25, /* gutter size */
+ column-width: false,
+ global-box-sizing: content-box,
+ last-flow: to
+);
+/* Makes border-box properties */
+@include border-box-sizing;
+
+
+.panels-flexible{
+  &-column{
+    @include container;
+    &-first{
+      @include breakpoint($mobile) {
+        @include span(16);
+      }
+      @include breakpoint($tablet) {
+        @include span(12);
+      }
+    }
+    &-last {
+      @include breakpoint($mobile) {
+        @include span(16);
+      }
+      @include breakpoint($tablet) {
+        @include span(4 last);
+      }
+    }
+  }
+}
