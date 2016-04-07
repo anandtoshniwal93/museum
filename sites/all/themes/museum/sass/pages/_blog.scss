@@ -37,6 +37,9 @@ h2{
 
 h6{
   @include heading6;
+  a:hover{
+    color:$hover-color;
+  }
 }
 
 .archive{
@@ -54,17 +57,25 @@ h6{
   }
 }
 
-.blogs-list{
+.blogs-list,
+#content .node{
     img{
       box-sizing: border-box;
-      height: auto;
+      height: 245px;
       max-width: 100%;
       padding-top: 1%;
       @include breakpoint($mobile){
         width: 100%;
       }
       @include breakpoint($tablet){
-        width: auto;
+        width: 45%;
+        height: 235px;
+        float: left;
+        padding-right: 4%;
+      }
+      @include breakpoint($desktop){
+        width: 40%;
+        height: 249px;
         float: left;
         padding-right: 4%;
       }
@@ -104,7 +115,8 @@ h6{
   }
 }
 
-.blogs-list{
+.blogs-list,
+#content .node{
   .node-readmore,
   .blog_usernames_blog,
   .comment-add,
@@ -143,14 +155,17 @@ h6{
   }
 }
 
-.blog-node p{
-  margin-bottom: 22px;
-  margin: 0 0 15px;
-  line-height: 21px;
-  font:$body-font-family;
+.blog-node, #content .node{
+    p{
+      margin-bottom: 22px;
+      margin: 0 0 15px;
+      line-height: 21px;
+      font:$body-font-family;
+  }
 }
 
-.blog-node{
+.blog-node,
+#content .node{
   .field-label-inline{
       .field-label{
         display:none;
@@ -161,7 +176,14 @@ h6{
   }
 }
 
-.blog-node{
+#content .node{
+  li{
+    list-style-type:none;
+  }
+}
+
+.blog-node,
+#content .node{
   .username:before{
     @include font_icon($user-font-code);
   }
@@ -173,6 +195,7 @@ h6{
 .blog-node{
   img{
     width:100%;
+    height: 285px;
   }
   .blog_usernames_blog,
   .comment_forbidden{
@@ -191,7 +214,8 @@ h6{
   }
 }
 
-.blog-node{
+.blog-node,
+#content .node{
   p.submitted{
     .username, time{
       @include breakpoint($mobile){
@@ -235,6 +259,10 @@ h6{
       line-height: 150%;
       font: $body-font-family;
     }
+}
+
+.field-name-field-faq-question{
+  font-weight : 600;
 }
 
 .pager-item,
@@ -378,11 +406,67 @@ li.category-3.isotope-element {
 
 }
 
+/*.porto{
+  .view-content{
+    .item-list{
+      @include breakpoint($mobile){
+        padding-left: 6%;
+      }
+      @include breakpoint($tablet){
+        padding-left: 6%;
+      }
+      @include breakpoint($desktop){
+        padding-left: 0%;
+      }
+    }
+  }
+}*/
+
+.porto .views-more-link{
+      /*display: -webkit-box;*/
+      display: table;
+      margin-top: 3%;
+      margin-bottom: 3%;
+
+}
+
+
+.porto{
+    .views-field.views-field-title{
+        padding-bottom: 2%;
+        padding-top: 2%;
+        .field-content{
+            color: $text-color;
+            text-transform: uppercase;
+            font: 400 12px/20px $body-font-family;
+            margin-bottom: 10px;
+            font-size: 91%;
+            margin-top: 5%;
+            padding-bottom: 2%;
+            padding-top: 2%;
+        }
+        .field-content:hover{
+            color: $hover-color;
+            text-transform: uppercase;
+            font: 400 12px/20px $body-font-family;
+            margin-bottom: 10px;
+            font-size: 91%;
+            margin-top: 5%;
+        }
+    }
+}
+
 .pager {
     clear: both;
     padding-top: 6%;
     margin-left: -40%;
     text-align: center;
+}
+
+#sponsors{
+  .views-label-field-company-logo{
+    display:none;
+  }
 }
 
 .testimonial{
@@ -401,7 +485,7 @@ li.category-3.isotope-element {
           }
         }
         p:hover{
-          color: #21B7E9;
+          color: $hover-color;
         }
     }
     .views-row {
