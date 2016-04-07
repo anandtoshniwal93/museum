@@ -59,16 +59,34 @@ h6{
       box-sizing: border-box;
       height: auto;
       max-width: 100%;
-      padding-top: 2%;
+      padding-top: 1%;
       @include breakpoint($mobile){
         width: 100%;
       }
       @include breakpoint($tablet){
         width: auto;
         float: left;
+        padding-right: 4%;
       }
     }
   }
+
+.blogs-list{
+    .views-field.views-field-name,
+    .views-field.views-field-created,
+    .views-field.views-field-comment-count{
+        @include breakpoint($mobile){
+                display: block;
+                margin-top: 2%;
+                border-bottom: 1px solid #777;
+                border-bottom-width: 0.2px;
+            }
+        @include breakpoint($tablet){
+            display:inline;
+            border-bottom:none;
+        }
+    }
+}
 
 .blogs-list{
   .submitted{
@@ -132,15 +150,14 @@ h6{
   font:$body-font-family;
 }
 
-.blog-node .node{
-  padding-left: 0%;
-    padding-right: 10%;
-
-}
-
 .blog-node{
-  .field-label-inline .field-label{
-  display: none;
+  .field-label-inline{
+      .field-label{
+        display:none;
+      }
+      .field-items:before{
+        @include font_icon($tag-code);
+      }
   }
 }
 
@@ -154,13 +171,39 @@ h6{
 }
 
 .blog-node{
+  img{
+    width:100%;
+  }
   .blog_usernames_blog,
   .comment_forbidden{
     a{
         @include button_style($a-color, $white);
+        @include breakpoint($mobile){
+          margin-left: -10%;
+        }
+        @include breakpoint($tablet){
+          margin-left: 0%;
+        }
     }
     a:hover{
       @include button_style($hover-color,$white);
+    }
+  }
+}
+
+.blog-node{
+  p.submitted{
+    .username, time{
+      @include breakpoint($mobile){
+        line-height: 21px;
+        display:block;
+        border-bottom: 1px solid #777;
+        border-bottom-width: 0.2px;
+      }
+      @include breakpoint($tablet){
+        display:inline;
+        border-bottom:none;
+      }
     }
   }
 }
@@ -218,6 +261,16 @@ h6{
 
 
 .poll{
+  @include breakpoint($mobile){
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  @include breakpoint($tablet){
+
+  }
+  @include breakpoint($desktop){
+
+  }
   .submitted{
     display:none;
   }
@@ -246,8 +299,22 @@ h6{
 }
 
 .poll{
+  ul{
+    list-style-type: none;
+  }
   .comment_forbidden a,input[type="submit"]{
     @include button_style($a-color, $white);
+    @include breakpoint($mobile){
+      margin-right: 0%;
+    }
+    @include breakpoint($tablet){
+      margin-right: -12%;
+      display: block;
+    }
+    @include breakpoint($tablet){
+      margin-right: 18%;
+      display: block;
+    }
   }
 }
 
@@ -263,11 +330,6 @@ h6{
     height: 20px;
     margin-bottom: 15px;
     padding: 1px;
-}
-
-.poll .node{
-  padding-left: 0%;
-    padding-right: 10%;
 }
 
 
@@ -328,6 +390,15 @@ li.category-3.isotope-element {
         img{
           float:left;
           padding-right: 5%;
+          @include breakpoint($mobile){
+            width:40%;
+          }
+          @include breakpoint($tablet){
+            width:30%;
+          }
+          @include breakpoint($desktop){
+            width:23%;
+          }
         }
         p:hover{
           color: #21B7E9;
@@ -336,7 +407,7 @@ li.category-3.isotope-element {
     .views-row {
         clear: both;
         min-height: 180px;
-        width: 85%;
+        width: 100%;
         padding-left: 0%;
     }
     .views-field.views-field-field-author-name,

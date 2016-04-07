@@ -1,9 +1,19 @@
 @mixin bg-basic{
     background: $white;
-    padding-left: 8%;
-    padding-right: 8%;
     padding-top: 5%;
     padding-bottom: 5%;
+    @include breakpoint($mobile){
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+    @include breakpoint($tablet){
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+    @include breakpoint($desktop){
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 }
 
 @mixin heading2{
@@ -41,12 +51,20 @@
     box-shadow: none;
     color: $font-color;
     display: inline-block;
-    font: 400 19px/22px 'Adamina', serif;
     outline: none;
     padding: 9px 28px 13px;
     text-decoration: none;
     text-transform: lowercase;
     margin-top: 5%;
+    @include breakpoint($mobile){
+      font: 400 18px/22px 'Adamina', serif;
+    }
+    @include breakpoint($tablet){
+      font: 400 15px/22px 'Adamina', serif;
+    }
+    @include breakpoint($desktop){
+      font: 400 19px/22px 'Adamina', serif;
+    }
 }
 
 @mixin font_icon($code){

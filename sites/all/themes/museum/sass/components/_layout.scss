@@ -40,6 +40,18 @@ $susy: (
 }
 
 #content {
-  @include container(80%);
+
+
   background:$white;
+
+  @include breakpoint($mobile){
+     @include container(100%);
+  }
+  @include breakpoint($tablet){
+     @include container(100%);
+  }
+  @include breakpoint($desktop){
+     @include container(80%);
+  }
+
 }
