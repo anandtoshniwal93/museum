@@ -21,15 +21,6 @@
     margin-top: 5%;
 }
 
-@mixin img_panels{
-    box-sizing: border-box;
-    height: auto;
-    max-width: 100%;
-    width: auto;
-    float: left;
-    padding-top: 2%;
-}
-
 @mixin para-bloglist{
     display: block;
     -webkit-margin-before: 1em;

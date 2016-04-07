@@ -38,3 +38,8 @@ $susy: (
     }
   }
 }
+
+#content {
+  @include container(80%);
+  background:$white;
+}
