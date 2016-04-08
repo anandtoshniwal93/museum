@@ -5,7 +5,7 @@ $susy: (
  math: fluid,
  output: float,
  gutter-position: after,
- container: auto,
+ container: 1200px,
  container-position: center,
  columns: 16,/* number of columns */
  gutters: .25, /* gutter size */
@@ -38,8 +38,34 @@ $susy: (
     }
   }
 }
+.front #main{
+    background:none;
+}
+.front #content {
+  max-width: 100%;
+  background:none;
+  .panel-col-{
+    &top,
+    &bottom{
+      .sponsors{
+        @include container;
+      }
+    }
+    &middle{
+      .inside {
+        @include container;
 
+      }
+    }
+  }
+  .panel-display > .center-wrapper {
+    @include container;
+  }
+}
 
+#main{
+  background:$white;
+}
 #content {
 
 
