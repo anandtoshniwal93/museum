@@ -154,6 +154,7 @@ h6{
       margin: 0 0 15px;
       line-height: 21px;
       font:$body-font-family;
+      padding-top: 1%;
   }
 }
 
@@ -358,20 +359,30 @@ h6{
 // }
 #isotope-options #filters{
     li {
-        display: inline-block;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        padding: 0;
-        background: none;
+          display: inline-block;
+          margin-left: 10px;
+          margin-bottom: 10px;
+          padding: 0;
+          background: none;
     }
 }
 
 .port-head{
       ul{
         list-style: none;
-        display: -webkit-box;
         padding-bottom: 3%;
-        padding-left: 46%;
+          @include breakpoint($mobile){
+            padding-left: 53%;
+            display: table;
+          }
+          @include breakpoint($tablet){
+             padding-left: 41%;
+             display: -webkit-box;
+          }
+          @include breakpoint($desktop){
+            padding-left: 55%;
+            display: -webkit-box;
+          }
       }
       li{
           margin-right:3px;
@@ -382,6 +393,17 @@ h6{
             @include button_style($hover-color,$white);
           }
       }
+}
+
+.porto{
+  .views-more-link{
+    @include button_style($a-color, $white);
+     display:table;
+  }
+  .views-more-link:hover{
+    @include button_style($hover-color,$white);
+     display:table;
+  }
 }
 
 .porto .views-more-link{
@@ -444,11 +466,11 @@ h6{
 
 .view-portfolio-page{
   ul.isotope-container{
+
     @include container;
     padding-left: 0;
     li.isotope-element{
       margin:0 0 0.25em 0;
-      width:31%;
       margin-right:2%;
       list-style: none;
       &:nth-child(3n+2){
@@ -458,9 +480,60 @@ h6{
         width: 100%;
         height: auto;
       }
+      @include breakpoint($mobile){
+      width:99%;
+      }
+      @include breakpoint($tablet){
+        width:48%;
+      }
+      @include breakpoint($desktop){
+        width:31%;
+      }
     }
   }
 }
+
+/*view-portfolio-page{
+  ul.isotope-container{
+    padding-left: 0;
+    @include container;
+    @include breakpoint($mobile){
+      width:395px;
+    }
+    @include breakpoint($tablet){
+      width:748px;
+    }
+    @include breakpoint($desktop){
+    }
+    li.isotope-element{
+      margin:0 0 0.25em 0;
+      list-style: none;
+
+      @include breakpoint($mobile){
+        width:94%;
+        margin-right:3%;
+          margin-left:3%;
+        &:nth-child(3n+2){
+          margin-right:0%;
+        }
+      }
+      @include breakpoint($tablet){
+        width:49%;
+        margin-right:2%;
+        &:nth-child(3n+2){
+          margin-right:0%;
+        }
+      }
+      @include breakpoint($desktop){
+        width:31%;
+        margin-right:2%;
+        &:nth-child(3n+2){
+          margin-right:0%;
+        }
+      }
+    }
+  }
+}*/
 
 .pager {
     clear: both;

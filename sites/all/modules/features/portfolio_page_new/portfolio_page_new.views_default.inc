@@ -104,8 +104,8 @@ function portfolio_page_new_views_default_views() {
   $handler->display->display_options['fields']['field_blog_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_blog_image']['type'] = 'colorbox';
   $handler->display->display_options['fields']['field_blog_image']['settings'] = array(
-    'colorbox_node_style' => '191___191',
-    'colorbox_node_style_first' => '191___191',
+    'colorbox_node_style' => '357_261',
+    'colorbox_node_style_first' => '357_261',
     'colorbox_image_style' => '',
     'colorbox_gallery' => 'page',
     'colorbox_gallery_custom' => '',
