@@ -8,29 +8,7 @@ a {
 }
 
 #main{
-  #bloglist{
-    @include bg-basic;
-  }
-  #sponsors{
-    @include bg-basic;
-  }
-  #blognode{
-    @include bg-basic;
-  }
-  #faqmain{
-    @include bg-basic;
-  }
-  .porto{
-    background: $white;
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-  #testimo{
-    @include bg-basic;
-  }
-  #archivelist{
-    @include bg-basic;
-  }
+  @include bg-basic;
 }
 
 h2{
@@ -101,7 +79,7 @@ h6{
     }
 }
 
-.blogs-list{
+.blogs-list, #content .node{
   .submitted{
     display:none;
   }
@@ -144,6 +122,12 @@ h6{
     padding: 0;
     clear: both;
     padding-top: 5%;
+        @include breakpoint($mobile){
+          padding-left: 6%;
+        }
+        @include breakpoint($tablet){
+          padding-left: 0%;
+        }
     }
 
 .blogs-list, .blog-node{
@@ -298,16 +282,6 @@ h6{
 
 
 .poll{
-  @include breakpoint($mobile){
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-  @include breakpoint($tablet){
-
-  }
-  @include breakpoint($desktop){
-
-  }
   .submitted{
     display:none;
   }
