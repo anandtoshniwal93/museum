@@ -77,4 +77,87 @@
     color: $hover-color;
     font-size: smaller;
 }
+@mixin front_block{
+    background: $text-color;
+    color: white;
+    margin: -3px;
+    padding: 55px 0 16px;
+    overflow: hidden;
+    border-top: 12px solid #1BBAF0;
+     border-bottom: 11px solid #c0c1c3;
+     text-align: center;
+     text-transform: uppercase;
+.block2 {
+  .views-row{
+    @include breakpoint($mobile)
+    {
+        float: none;
+        width: 100%;
+    }
+    @include breakpoint($desktop)
+    {
+      @include span(3.9);
+    }
+  }
+  .views-field-title {
+    color: white;
+    font-family:'Adamina', serif;
+    position: relative;
+    display: block;
+    height: 80px;
+    @include breakpoint($mobile)
+    {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    @include breakpoint($desktop)
+    {
+    font-size: 27px;
+    line-height: 28px;
+        /* style */
+    }
+  }
+  .views-field-counter {
+    font-family: 'Ewert', cursive;
+    font-size: 88px;
+    line-height: 88px;
+    color:$footer-background;
+    position: relative;
+    background: url(../images/star-3.png) center bottom no-repeat;
+    padding: 0 0 33px;
+    margin: 0 0 21px;
+}
+  p{
+    padding: 0 30px;
+    margin-bottom: 0;
+    text-decoration:justify;
+    font-family: $body-font-family;
+    color: $white;
+    text-align: center;
+    @include breakpoint($mobile)
+    {
+        padding:0px;
+        font-size: 12px;
+        margin: 0 0 15px;
+    }
+    @include breakpoint($desktop)
+    {
+        padding: 0 30px;
+        font-size: 14px;
+    }
+
+
+    a{
+      @include button_style($white,$black);
+      display: table;
+      margin-left: 30%;
+    }
+    a:hover{
+      background: #1BBAF0;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+}
 
