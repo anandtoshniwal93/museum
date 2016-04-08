@@ -285,7 +285,7 @@ th {
 }
 @media screen {
   #content {
-    max-width: 100%;
+    max-width: 96%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -297,7 +297,7 @@ th {
 }
 @media (min-width: 768px) {
   #content {
-    max-width: 100%;
+    max-width: 96%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -426,24 +426,6 @@ a {
   background: #ffffff;
   padding-top: 5%;
   padding-bottom: 5%;
-}
-@media screen {
-  #main .porto {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-}
-@media (min-width: 768px) {
-  #main .porto {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
-@media (min-width: 1025px) {
-  #main .porto {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
 }
 #main #testimo {
   background: #ffffff;
@@ -713,6 +695,13 @@ h6 a:hover {
   padding-top: 5%;
 }
 
+.inline {
+  display: block;
+  padding: 0;
+  clear: both;
+  padding-top: 5%;
+}
+
 .blogs-list li, .blog-node li {
   display: inline-block;
 }
@@ -773,6 +762,7 @@ h6 a:hover {
 
 #content .node li {
   list-style-type: none;
+  display: inline;
 }
 
 .blog-node .username:before,
@@ -881,6 +871,10 @@ h6 a:hover {
   }
 }
 
+.blog-node p.submitted,
+#content .node p.submitted {
+  margin-top: 5%;
+}
 @media screen {
   .blog-node p.submitted .username, .blog-node p.submitted time,
   #content .node p.submitted .username,
@@ -977,11 +971,11 @@ h6 a:hover {
   }
 }
 
-.pager-item a:hover,
-.pager-next a:hover,
-.pager-last a:hover,
-.pager-first a:hover,
-.pager-previous a:hover {
+.pager-item:hover,
+.pager-next:hover,
+.pager-last:hover,
+.pager-first:hover,
+.pager-previous:hover {
   background: #21B7E9;
   padding: 8px;
   border-radius: 21px;
@@ -996,29 +990,29 @@ h6 a:hover {
   margin-top: 5%;
 }
 @media screen {
-  .pager-item a:hover,
-  .pager-next a:hover,
-  .pager-last a:hover,
-  .pager-first a:hover,
-  .pager-previous a:hover {
+  .pager-item:hover,
+  .pager-next:hover,
+  .pager-last:hover,
+  .pager-first:hover,
+  .pager-previous:hover {
     font: 400 18px/22px 'Adamina', serif;
   }
 }
 @media (min-width: 768px) {
-  .pager-item a:hover,
-  .pager-next a:hover,
-  .pager-last a:hover,
-  .pager-first a:hover,
-  .pager-previous a:hover {
+  .pager-item:hover,
+  .pager-next:hover,
+  .pager-last:hover,
+  .pager-first:hover,
+  .pager-previous:hover {
     font: 400 15px/22px 'Adamina', serif;
   }
 }
 @media (min-width: 1025px) {
-  .pager-item a:hover,
-  .pager-next a:hover,
-  .pager-last a:hover,
-  .pager-first a:hover,
-  .pager-previous a:hover {
+  .pager-item:hover,
+  .pager-next:hover,
+  .pager-last:hover,
+  .pager-first:hover,
+  .pager-previous:hover {
     font: 400 19px/22px 'Adamina', serif;
   }
 }
@@ -1070,6 +1064,9 @@ h6 a:hover {
   margin-bottom: 15px;
   font-size: larger;
   color: #777;
+}
+.poll a:hover {
+  color: #21B7E9;
 }
 
 .poll .bar .foreground {
@@ -1165,16 +1162,6 @@ h6 a:hover {
   height: 20px;
   margin-bottom: 15px;
   padding: 1px;
-}
-
-li.category-1.isotope-element,
-li.category-2.isotope-element,
-li.category-3.isotope-element {
-  float: left;
-  width: 25%;
-  position: relative;
-  display: table;
-  overflow: hidden;
 }
 
 #isotope-options #filters li {
@@ -1303,6 +1290,31 @@ li.category-3.isotope-element {
   margin-bottom: 10px;
   font-size: 91%;
   margin-top: 5%;
+}
+
+.view-portfolio-page ul.isotope-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+.view-portfolio-page ul.isotope-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.view-portfolio-page ul.isotope-container li.isotope-element {
+  margin: 0 0 0.25em 0;
+  width: 31%;
+  margin-right: 2%;
+  list-style: none;
+}
+.view-portfolio-page ul.isotope-container li.isotope-element:nth-child(3n+2) {
+  margin-right: 0;
+}
+.view-portfolio-page ul.isotope-container li.isotope-element img {
+  width: 100%;
+  height: auto;
 }
 
 .pager {

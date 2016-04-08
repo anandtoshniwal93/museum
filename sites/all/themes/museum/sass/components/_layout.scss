@@ -46,10 +46,10 @@ $susy: (
   background:$white;
 
   @include breakpoint($mobile){
-     @include container(100%);
+     @include container(96%);
   }
   @include breakpoint($tablet){
-     @include container(100%);
+     @include container(96%);
   }
   @include breakpoint($desktop){
      @include container(80%);

@@ -21,7 +21,9 @@ a {
     @include bg-basic;
   }
   .porto{
-    @include bg-basic;
+    background: $white;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   #testimo{
     @include bg-basic;
@@ -109,11 +111,9 @@ h6{
 }
 
 
-.blogs-list{
-  p{
+.blogs-list p{
     @include para-bloglist;
   }
-}
 
 .blogs-list,
 #content .node{
@@ -130,12 +130,21 @@ h6{
     }
 }
 
-.blogs-list .inline {
+.blogs-list{
+       .inline {
+          display: block;
+          padding: 0;
+          clear: both;
+          padding-top: 5%;
+        }
+}
+
+.inline{
     display: block;
     padding: 0;
     clear: both;
     padding-top: 5%;
-}
+    }
 
 .blogs-list, .blog-node{
      li{
@@ -179,6 +188,7 @@ h6{
 #content .node{
   li{
     list-style-type:none;
+    display : inline;
   }
 }
 
@@ -217,6 +227,7 @@ h6{
 .blog-node,
 #content .node{
   p.submitted{
+    margin-top: 5%;
     .username, time{
       @include breakpoint($mobile){
         line-height: 21px;
@@ -273,14 +284,12 @@ h6{
   @include button_style($a-color, $white);
 }
 
-.pager-item,
-.pager-next,
-.pager-last,
-.pager-first,
-.pager-previous {
-  a:hover{
+.pager-item:hover,
+.pager-next:hover,
+.pager-last:hover,
+.pager-first:hover,
+.pager-previous:hover {
     @include button_style($hover-color,$white);
-  }
 }
 
 .pager-current {
@@ -312,6 +321,9 @@ h6{
     margin-bottom: 15px;
     font-size: larger;
     color: $grey;
+  }
+  a:hover{
+    color: $hover-color;
   }
 }
 
@@ -361,15 +373,15 @@ h6{
 }
 
 
-li.category-1.isotope-element,
-li.category-2.isotope-element,
-li.category-3.isotope-element {
-    float: left;
-    width: 25%;
-    position: relative;
-    display: table;
-    overflow: hidden;
-}
+// li.category-1.isotope-element,
+// li.category-2.isotope-element,
+// li.category-3.isotope-element {
+//     float: left;
+//     width: 25%;
+//     position: relative;
+//     display: table;
+//     overflow: hidden;
+// }
 #isotope-options #filters{
     li {
         display: inline-block;
@@ -454,6 +466,26 @@ li.category-3.isotope-element {
             margin-top: 5%;
         }
     }
+}
+
+.view-portfolio-page{
+  ul.isotope-container{
+    @include container;
+    padding-left: 0;
+    li.isotope-element{
+      margin:0 0 0.25em 0;
+      width:31%;
+      margin-right:2%;
+      list-style: none;
+      &:nth-child(3n+2){
+        margin-right:0;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 
 .pager {
