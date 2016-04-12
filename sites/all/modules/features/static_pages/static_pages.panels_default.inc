@@ -137,7 +137,7 @@ E-mail: mail@demolink.org',
     $display->content['new-893319ef-5c9e-4238-95b6-bd2b9a1c7aa9'] = $pane;
     $display->panels['center'][0] = 'new-893319ef-5c9e-4238-95b6-bd2b9a1c7aa9';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-893319ef-5c9e-4238-95b6-bd2b9a1c7aa9';
+  $display->title_pane = '0';
   $mini->display = $display;
   $export['contact'] = $mini;
 

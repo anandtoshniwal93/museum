@@ -216,7 +216,7 @@ function static_pages_default_page_manager_pages() {
   $display->title_pane = 'new-7b0cef4e-cc46-402a-92b3-719cc7be317f';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['about__us'] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -384,7 +384,7 @@ function static_pages_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['contact_page'] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -607,7 +607,7 @@ function static_pages_default_page_manager_pages() {
   $display->title_pane = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages[''] = $page;
+  $pages['faq_panel'] = $page;
 
   return $pages;
 
