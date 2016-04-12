@@ -81,6 +81,11 @@
     {
         float: none;
         width: 100%;
+        padding-bottom:30px;
+    }
+    @include breakpoint($tablet)
+    {
+        @include span(3.9);
     }
     @include breakpoint($desktop)
     {
@@ -97,6 +102,7 @@
     {
         font-size: 20px;
         line-height: 25px;
+        height: 50px;
     }
     @include breakpoint($desktop)
     {
@@ -114,6 +120,25 @@
     background: url(../images/star-3.png) center bottom no-repeat;
     padding: 0 0 33px;
     margin: 0 0 21px;
+}
+.views-field-counter:after, .views-field-counter:before{
+    background: url('../images/border-2.png') center top repeat-x;
+    transition: all 0.3s ease;
+    content: '';
+    float: left;
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    height: 10px;
+    width: 45%;
+
+}
+
+.views-field-counter:after{
+    right:0;
+}
+.views-field-counter:before{
+    left: 0;
 }
   p{
     padding: 0 30px;
@@ -134,12 +159,34 @@
         font-size: 14px;
     }
 
-
+    .views-more-link{
+        @include breakpoint($mobile)
+        {
+        display: block;
+        width: 132px;
+        margin-left: 75px;
+        }
+        @include breakpoint($tablet)
+        {
+            margin-top: 26px;
+             display: block;
+             width: 132px;
+             margin-left:43px;
+        }
+    }
     a{
       @include button_style($white,$black);
       display: table;
+   @include breakpoint($tablet)
+   {
+    margin-left: 27%;
+   }
+    @include breakpoint($desktop)
+    {
       margin-left: 30%;
+  }
     }
+
     a:hover{
       background: #1BBAF0;
       color: white;
@@ -148,4 +195,5 @@
   }
 }
 }
+
 

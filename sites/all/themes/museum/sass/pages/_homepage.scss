@@ -1,141 +1,143 @@
 @import "susy";
-body{
+.front #main {
+    padding: 0;
+}
 
-
+body {
     background: url('../images/header-bg.jpg') center top no-repeat;
-
-  }
-
+}
 
 .logo-wrap {
-  @include breakpoint($mobile){
-      height: 150px;
-      background: url(../images/logo.png) center top no-repeat;
-      background-size:100%;
-    }
-
-    @include breakpoint($tablet)
-    {
-        height: 261px;
     background: url(../images/logo.png) center top no-repeat;
-    overflow: hidden;
+    @include breakpoint($mobile) {
+        height: 117px;
+        background: url(../images/logo.png) center top no-repeat;
+        background-size: 100%;
+        /* padding: 40px 0; */
+        margin-top: 50px;
     }
-    //@include breakpoint($desktop)
-    //{
-    //height: 261px;
-    //background: url(../images/logo.png) center top no-repeat;
-    //overflow: hidden;
-   // }
-
+    @include breakpoint($tablet) {
+        height: 153px;
+        margin-top: 108px;
+        background-size: 50%;
+    }
+    @include breakpoint($desktop) {
+        height: 261px;
+        //background: url(../images/logo.png) center top no-repeat;
+        overflow: none;
+        margin-top: 139px;
+        position: relative;
+        background-size: 65%;
+    }
 }
+
 .panel-col-top {
     display: table;
-     background: rgba(0,0,0,0.5);
-     @include breakpoint($mobile)
-     {
-      padding: 34px 0 43px;
-     }
-     @include breakpoint($desktop)
-     {
-
-  }
-
-
-.block1 {
-    @include span(15);
-    float: none;
-    margin:auto;
-    text-align: center;
-    .views-field-field-blog-image {
-      @include breakpoint($mobile)
-      {
-        max-width: 45%;
+    background: rgba(0, 0, 0, 0.5);
+    border-image: url('../images/menu-collapsed-rtl.png');
+    @include breakpoint($mobile) {
+        padding: 34px 0 43px;
+    }
+    @include breakpoint($desktop) {}
+    .block1 {
+        @include span(15);
         float: none;
-        margin-bottom: 40px;
-      }
-      @include breakpoint($desktop)
-      {
-          @include span(6);
-       }
-        img {
-           border-radius: 500px;
-            box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.12);
-          @include breakpoint($mobile)
-          {
-            height: 137px;
-            width: 137px;
-          }
-          @include breakpoint($desktop){
-            width: auto;
-            height: auto;
-          }
-        }
-      }
-
-    .views-field-created {
-
-        font-family: 'Maiden Orange', cursive;
-        text-transform: uppercase;
-        font-size: 48px;
-        line-height: 50px;
-        color: #fff;
-        margin-bottom: 10px;
+        margin: auto;
         text-align: center;
-        background: url(../images/border-3.png) center top repeat-x;
-    padding: 36px 0 0;
-
-    @include breakpoint($desktop){
-          @include span(9 at 7);
-      }
-       // background:url('../images/border-3.png') center top repeat-x;
-    }
-
-
-    .views-field-title {
-
-        font-family: 'Ewert', cursive;
-        text-transform: uppercase;
-        color: #fff;
-        text-align: center;
-         background: url(../images/border-3.png) center bottom repeat-x;
-        padding-bottom:36px;
-        @include breakpoint($mobile)
-        {
-          font-size:60px;
-          line-height:60px;            /* style */
+        .views-field-field-blog-image {
+            @include breakpoint($mobile) {
+                max-width: 45%;
+                float: none;
+                margin-bottom: 40px;
+            }
+            @include breakpoint($desktop) {
+                @include span(6);
+            }
+            img {
+                border-radius: 500px;
+                box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.12);
+                @include breakpoint($mobile) {
+                    height: 137px;
+                    width: 137px;
+                }
+                @include breakpoint($desktop) {
+                    width: auto;
+                    height: auto;
+                }
+            }
         }
-        @include breakpoint($desktop)
-         {
-          @include span(9 at 7);
-          font-size: 88px;
-          line-height: 88px;
+        .views-more-link {
+            @include breakpoint($mobile) {
+
+                @include button_style(#1BBAF0,
+                $white);
+                display: block;
+                margin-left: 75px;
+                width: 132px;
+            }
+            @include breakpoint($tablet) {
+                width: 134px;
+                margin-left: 41%;
+                @include button_style(#1BBAF0,
+                $white);
+                display: block;
+            }
         }
-
+        .views-field-created {
+            font-family: 'Maiden Orange', cursive;
+            text-transform: uppercase;
+            font-size: 48px;
+            line-height: 50px;
+            color: #fff;
+            margin-bottom: 10px;
+            text-align: center;
+            background: url(../images/border-3.png) center top repeat-x;
+            padding: 36px 0 0;
+            @include breakpoint($desktop) {
+                @include span(9 at 7);
+            }
+            // background:url('../images/border-3.png') center top repeat-x;
+        }
+        .views-field-title {
+            font-family: 'Ewert', cursive;
+            text-transform: uppercase;
+            color: #fff;
+            text-align: center;
+            background: url(../images/border-3.png) center bottom repeat-x;
+            padding-bottom: 36px;
+            @include breakpoint($mobile) {
+                font-size: 60px;
+                line-height: 60px;
+                /* style */
+            }
+            @include breakpoint($desktop) {
+                @include span(9 at 7);
+                font-size: 88px;
+                line-height: 88px;
+            }
+        }
+        .views-field-body {
+            @include breakpoint($mobile) {}
+            @include breakpoint($desktop) {
+                @include span(9 at 7);
+            }
+            margin-top: 20px;
+            color: #fffffe;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: center;
+            width: 100%;
+        }
     }
-    .views-field-body {
-       @include breakpoint($mobile){
+}
 
-      }
-      @include breakpoint($desktop){
-          @include span(9 at 7);
-      }
-        margin-top: 20px;
-        color: #fffffe;
-        font-size: 22px;
-        line-height: 28px;
-        text-align: center;
-        width: 100%;
-    }
-}}
 .panel-col-middle {
     @include front_block;
-    @include breakpoint($mobile)
-    {
-      padding: 55px 0 16px;
+    @include breakpoint($mobile) {
+        padding: 55px 15px 16px 15px;
     }
-    @include breakpoint($desktop)
-    {
-    padding: 75px 0 54px;
+    @include breakpoint($desktop) {
+        padding: 75px 0 54px;
     }
 }
 
@@ -151,131 +153,140 @@ body{
         }
     }
 }
-.panel-2col-bricks
-{
-.panel-col-first {
 
-      @include breakpoint($mobile)
-      {
-        float: none;
-        width: 100%;
-      }
-      @include breakpoint($desktop)
-      {
-        flex: left;
-        width: 50%;
-      }
-    .inside {
-        margin: none;
-    }
-    .front-three {
-        text-align: center;
-        @include breakpoint($mobile)
-        {
-          padding: 60px 0 0px;
-        }
-        @include breakpoint($desktop)
-        {
-        padding: 60px 0 64px;
-        }
-        .views-row {
-          @include breakpoint($mobile)
-          {
+.panel-2col-bricks {
+    .panel-col-first {
+        @include breakpoint($mobile) {
             float: none;
             width: 100%;
-            padding:0px;
-          }
-          @include breakpoint($desktop)
-          {
-            @include span(8);
-            padding-right: 40px;
-            margin-right: 0;
-          }
-
-            img {
-                box-shadow: 10px 4px 0 rgba(226, 226, 226, 0.5);
-                border-radius: 500px;
-            }
         }
-        .views-field-title {
-            color: #31353d;
-            font: 400 32px/40px 'Adamina', serif;
-            height: 47px;
-            overflow: hidden;
+        @include breakpoint($tablet) {
+            flex: left;
+            width: 50%;
         }
-        .views-field-body {
-            text-decoration: justify;
-            color: #777777;
-            height: 115px;
-            overflow: hidden;
-            @include breakpoint($mobile)
-            {
-                font-size: 14px;
-                line-height: 22px;
-            }
-            @include breakpoint($desktop)
-            {
-                font-size: 20px;
-
-            }
+        @include breakpoint($desktop) {
+            flex: left;
+            width: 50%;
         }
-    }
-}
-}
-
-.panel-2col-bricks
-{
-.panel-col-last {
-      @include breakpoint($mobile)
-      {
-          float: none;
-          width: 100%;
-      }
-      @include breakpoint($desktop)
-      {
-          float: left;
-          width: 50%;
-          margin-top: -95px;
-      }
-    .front-four {
-        padding-top: 30px;
-        padding-left: 30px;
-        .pane-title {
-            font-family: 'Bevan', cursive;
-
-            color: #21b7e9;
-
-            @include breakpoint($mobile)
-            {
-                font-size: 40px;
-                line-height: 44px;
-                padding-right:0px;
-            }
-            @include breakpoint($desktop)
-            {
-              font-size: 56px;
-              line-height: 55px;
-              padding-right: 160px;
-            }
+        .inside {
+            margin: none;
         }
-        h2 {
-            margin-bottom: 20px;
-        }
-        .views-field-title {
-            a {
+        .front-three {
+            text-align: center;
+            @include breakpoint($mobile) {
+                padding: 60px 0 0px;
+            }
+            @include breakpoint($desktop) {
+                padding: 60px 0 64px;
+            }
+            .views-row {
+                @include breakpoint($mobile) {
+                    float: none;
+                    width: 100%;
+                    padding: 0px;
+                }
+                @include breakpoint($tablet) {
+                    @include span(8);
+                    padding-right: 40px;
+                    margin-right: 0;
+                }
+                @include breakpoint($desktop) {
+                    @include span(8);
+                    padding-right: 40px;
+                    margin-right: 0;
+                }
+                img {
+                    box-shadow: 10px 4px 0 rgba(226, 226, 226, 0.5);
+                    border-radius: 500px;
+                }
+            }
+            .views-field-title {
                 color: #31353d;
-                font: 400 23px/30px 'Adamina', serif;
-                margin-bottom: 14px;
+                font: 400 32px/40px 'Adamina', serif;
+                height: 47px;
+                overflow: hidden;
             }
-        }
-        .views-field-body {
-            text-decoration: justify;
-            color: #777777;
-            font-size: 20px;
+            .views-field-body {
+                text-decoration: justify;
+                color: #777777;
+                height: 115px;
+                overflow: hidden;
+                @include breakpoint($mobile) {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                @include breakpoint($desktop) {
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
+
+.panel-2col-bricks {
+    .panel-col-last {
+        @include breakpoint($mobile) {
+            float: none;
+            width: 100%;
+        }
+        @include breakpoint($tablet) {
+            float: left;
+            width: 50%;
+            margin-top: -95px;
+        }
+        @include breakpoint($desktop) {
+            float: left;
+            width: 50%;
+            margin-top: -95px;
+        }
+        .front-four {
+            padding-top: 30px;
+            padding-left: 30px;
+            .pane-title {
+                font-family: 'Bevan', cursive;
+                color: #21b7e9;
+                @include breakpoint($mobile) {
+                    font-size: 40px;
+                    line-height: 44px;
+                    padding-right: 0px;
+                }
+                @include breakpoint($tablet) {
+                    font-size: 56px;
+                    line-height: 55px;
+                    padding-right: 160px;
+                }
+                @include breakpoint($desktop) {
+                    font-size: 56px;
+                    line-height: 55px;
+                    padding-right: 160px;
+                }
+            }
+            h2 {
+                margin-bottom: 20px;
+            }
+            .views-field-title {
+                a {
+                    color: #31353d;
+                    font: 400 23px/30px 'Adamina', serif;
+                    margin-bottom: 14px;
+                }
+            }
+            .views-field-body {
+                text-decoration: justify;
+                color: #777777;
+                font-size: 20px;
+            }
+            .views-more-link {
+                @include button_style($text-color,
+                $white);
+                display: block;
+                width: 134px;
+                margin-top: 2%;
+            }
+        }
+    }
 }
+
 .video-block {
     margin-top: 64px;
     background: #4D5057;
@@ -283,18 +294,15 @@ body{
     text-align: center;
     h1 {
         font-family: 'Bevan', cursive;
-
         color: #fff;
         margin: 0 0 16px;
-        @include breakpoint($mobile)
-        {
-                font-size: 40px;
-                line-height: 40px;
+        @include breakpoint($mobile) {
+            font-size: 40px;
+            line-height: 40px;
         }
-        @include breakpoint($desktop)
-        {
-             font-size: 61px;
-              line-height: 70px;
+        @include breakpoint($desktop) {
+            font-size: 61px;
+            line-height: 70px;
         }
     }
     .video {
@@ -305,16 +313,13 @@ body{
         color: #fff;
         font-size: 30px;
         padding: 30px 0 0;
-
-        background: url(../images/border-6.png) center top repeat-x;
-      @include breakpoint($mobile)
-      {
-          margin:0px;
-      }
-      @include breakpoint($desktop)
-      {
-        margin: 0 240px;
-      }
+        background: url(../images/border-3.png) center top repeat-x;
+        @include breakpoint($mobile) {
+            margin: 0px;
+        }
+        @include breakpoint($desktop) {
+            margin: 0 240px;
+        }
     }
 }
 
@@ -332,19 +337,18 @@ body{
     .views-row {
         padding: 10px;
         box-sizing: border-box;
-
-        @include breakpoint($mobile)
-        {
-           width: 100%;
-           display: block;
-           text-align: center;
-
+        @include breakpoint($mobile) {
+            width: 100%;
+            display: block;
+            text-align: center;
         }
-        @include breakpoint($desktop)
-        {
-
-           width: 15%;
-          display: inline-block;
+        @include breakpoint($tablet) {
+            width: 15%;
+            display: inline-block;
+        }
+        @include breakpoint($desktop) {
+            width: 15%;
+            display: inline-block;
         }
         img {
             width: 100%;
@@ -362,7 +366,7 @@ body{
         overflow: hidden;
         text-align: center;
         padding-bottom: 14px;
-        padding-left:0px;
+        padding-left: 0px;
         li {
             font-size: 18px;
             line-height: 22px;
@@ -370,19 +374,15 @@ body{
             text-transform: uppercase;
             position: relative;
             list-style: none;
-
             text-align: center;
-
-            @include breakpoint($mobile)
-            {
-              display: block;
+            @include breakpoint($mobile) {
+                display: block;
             }
-            @include breakpoint($desktop)
-            {
-              display: inline;
-              border-right: 1px solid #e5e5e6;
-              padding-left: 15px;
-            padding-right: 15px;
+            @include breakpoint($desktop) {
+                display: inline;
+                border-right: 1px solid #e5e5e6;
+                padding-left: 15px;
+                padding-right: 15px;
             }
             a {
                 color: #31353d;
@@ -395,16 +395,13 @@ body{
         padding-right: 5px;
         padding-left: 5px;
         text-align: center;
-           line-height: 40px;
-           font-size: 18px;
-           color: #fff;
-           border-radius: 50px;
-           background: #c0c1c3;
-           width: 40px;
-           height: 40px;
-
-
-
+        line-height: 40px;
+        font-size: 18px;
+        color: #fff;
+        border-radius: 50px;
+        background: #c0c1c3;
+        width: 40px;
+        height: 40px;
     }
     .social {
         padding-bottom: 15px;
@@ -433,29 +430,292 @@ body{
     }
 }
 
+.menu-wrapper {
+    @include breakpoint($mobile) {
+        width: 100%;
+        padding: 79px 17px 18px 18px;
+        //padding: 0px 17px 18px 18px;
+        background: #000;
+    }
+    @include breakpoint($tablet) {
+        box-sizing: border-box;
+        width: 172px;
+        left: 0;
+        top: 0;
+        float: left;
+        margin-top: -108px;
+        padding: 23px 17px 23px 18px;
+    }
+    @include breakpoint($desktop) {
+        box-sizing: border-box;
+        width: 172px;
+        left: 0;
+        top: 0;
+        float: left;
+        margin-top: -150px;
+        //  padding: 23px 17px 23px 32px;
+    }
+}
 
-// #main {
-//   #content {
-//     margin: 0 auto;
-//     @include breakpoint($mobile){
-//       width:96%;
-//     }
-//     @include breakpoint($tablet){
-//       width:90%;
-//     }
-//     @include breakpoint($desktop){
-//       width:80%;
-//     }
-//   }
-// }
-// p {
-//   @include breakpoint($mobile){
-//     font-size: 26px;
-//   }
-//   @include breakpoint($tablet){
-//     font-size: 13px;
-//   }
-//   @include breakpoint($desktop){
-//     font-size: 67px;
-//   }
-// }
+.sf-menu {
+    &.sf-style-light-blue {
+        .sf-depth-1 {
+            &.first {
+                background: url('../images/border-3.png') center top repeat-x;
+                padding-top: 25px;
+            }
+            &.last {
+                background: url('../images/border-3.png') center bottom repeat-x;
+                padding-bottom: 25px;
+            }
+        }
+        li {
+            background: black;
+            a {
+                border: none;
+                font: 400 24px/33px 'Maiden Orange', cursive;
+                color: $white;
+                padding: 0;
+            }
+            a:hover {
+                color: #1BBAF0;
+                background: url(../images/star-3.png) center right no-repeat black;
+            }
+        }
+        a {
+            border: none;
+        }
+        a:active,
+        a:focus {
+            background: black;
+            color: white;
+        }
+        .sf-depth-1 {
+            width: 140px;
+            .sf-sub-indicator {
+                display: none;
+            }
+            .sf-with-ul {
+                padding-right: 0;
+            }
+            ul {
+                width: 443px !important;
+                margin-left: -50px !important;
+                li {
+                    width: 33%;
+                    background: #1BBAF0;
+                    a {
+                        font-family: times new roman, serif;
+                        font-size: 14px;
+                        color: white;
+                    }
+                    a:hover {
+                        color: black;
+                        background: #1BBAF0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block-superfish {
+    width: 172px;
+    h2 {
+        display: none;
+    }
+}
+
+
+/* ===================
+    ABOUT  US PAGE
+   ===================*/
+
+.page-about-us {
+    #main {
+        padding: 0px;
+    }
+    .panels-flexible-6 {
+        .panels-flexible-row {
+            padding: 0 0 0.0em 0;
+        }
+    }
+    .about-us {
+        background-color: #31353D;
+    }
+    .mini-block {
+
+        .left-img {
+          @include breakpoint($mobile)
+        {
+            left: none;
+            padding:0;
+            //width: 100%;
+            padding-left:15px;
+            padding-right:15px;
+        }
+
+        @include breakpoint($tablet)
+        {
+            float: left;
+           // padding: 0px 15px 15px 0px;
+        }
+        @include breakpoint($desktop)
+        {
+          float: left;
+          padding: 0px 15px 15px 0px;
+        }
+      }
+        .right-img {
+            @include breakpoint($mobile)
+            {
+              float: none;
+              width: 100%;
+              padding-left: 15px;
+              padding-right:15px;
+            }
+            @include breakpoint($tablet)
+            {
+            float: right;
+            //padding: 0px 0px 15px 15px;
+            width: 35%;
+          }
+        }
+        h1 {
+
+            font: 400 23px/30px 'Adamina', serif;
+            margin-bottom: 14px;
+            color: white;
+            @include breakpoint($mobile)
+            {
+              padding-right:15px;
+              padding-left:15px;
+
+            }
+        }
+        p {
+
+            color: white;
+            text-decoration: justify;
+            line-height: 20px;
+            font-size: 16px;
+            padding: 0px 15px 30px 15px !important;
+            margin: 0px;
+        }
+    }
+    .panels-flexible-region-6-testimonials,
+    .panels-flexible-region-6-center,
+    .panels-flexible-region-6-what_we_offer {
+        float: none;
+        width: 100%;
+    }
+    .what-we-offer {
+       @include breakpoint($mobile)
+       {
+        padding-left:15px;
+        padding-right:15px;
+       }
+        @include front_block;
+        margin: 0px;
+        background: #f5f5f5;
+        border-top: 11px solid #c0c1c3;
+        border-bottom: 0px;
+
+        .block2 {
+            .views-field-title {
+                display: none;
+            }
+            .views-field-counter {
+                color: black;
+                background:url('../images/star-1.png') center bottom no-repeat;
+            }
+            .views-field-counter:after,
+        .views-field-counter:before {
+            background: url('../images/border-7.png') center top repeat-x;
+        }
+            p {
+                color: #777;
+                text-transform: lowercase;
+                @include breakpoint($mobile)
+                {
+                   font-size:18px;
+               }
+               @include breakpoint($tablet)
+                {
+                   font-size:16px;
+               }
+
+            }
+            .views-more-link {
+                @include button_style($text-color,
+                white);
+                display: block;
+                width: 132px;
+                margin: auto;
+            }
+        }
+    }
+    .testimony {
+       @include breakpoint($mobile)
+       {
+        padding-right: 15px;
+        padding-left:15px;
+       }
+        padding: 30px 0 64px;
+        .views-row {
+          @include breakpoint($mobile)
+          {
+            float: none;
+            width: 100%;
+            padding-right:0;
+            position: relative;
+          }
+          @include breakpoint($tablet)
+          {
+            float: left;
+            width: 50%;
+            position: relative;
+            padding-right: 51px;
+          }
+
+            img {
+               @include breakpoint($mobile)
+               {
+                float: none;
+               }
+               @include breakpoint($tablet)
+               {
+                float: left;
+               }
+                box-shadow: 10px 4px 0 rgba(226, 226, 226, 0.5);
+                border-radius: 500px;
+
+                margin-right: 27px;
+            }
+        }
+
+        .views-field-field-image1:after {
+           @include breakpoint($mobile)
+           {
+            transition: all 0.3s ease;
+            content: '';
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(../images/quote.png) 0 0 no-repeat;
+        }
+      }
+        .views-field-body a:hover {
+            color: #21b7e9;
+        }
+        .views-field-field-author-name {
+            padding-top: 20px;
+            color: #31353d;
+            font: 400 23px/30px 'Adamina', serif;
+            margin-bottom: 14px;
+        }
+    }
+}

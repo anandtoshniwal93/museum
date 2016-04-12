@@ -15,7 +15,11 @@
 <div id="page">
 
     <div class="header">
+     <div class="menu-wrapper">
       <?php print render($page['header']); ?>
+      </div>
+      <div class="logo-wrap">
+      </div>
   </div>
 
   </header>
