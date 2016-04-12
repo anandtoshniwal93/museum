@@ -65,7 +65,7 @@ function static_pages_default_panels_mini() {
     );
     $pane->css = array(
       'css_id' => '',
-      'css_class' => 'mini',
+      'css_class' => 'mini-block',
     );
     $pane->extras = array();
     $pane->position = 0;

@@ -16,10 +16,7 @@ function static_pages_default_page_manager_pages() {
   $page->admin_title = 'About us';
   $page->admin_description = 'About us';
   $page->path = 'About_us';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->access = array();
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -205,7 +202,10 @@ function static_pages_default_page_manager_pages() {
     $pane->style = array(
       'settings' => NULL,
     );
-    $pane->css = array();
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'what-we-offer',
+    );
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
@@ -216,7 +216,7 @@ function static_pages_default_page_manager_pages() {
   $display->title_pane = 'new-7b0cef4e-cc46-402a-92b3-719cc7be317f';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['about__us'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -226,10 +226,7 @@ function static_pages_default_page_manager_pages() {
   $page->admin_title = 'contact page';
   $page->admin_description = '';
   $page->path = 'contactpage';
-  $page->access = array(
-    'type' => 'none',
-    'settings' => NULL,
-  );
+  $page->access = array();
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(
@@ -387,7 +384,7 @@ function static_pages_default_page_manager_pages() {
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['contact_page'] = $page;
+  $pages[''] = $page;
 
   $page = new stdClass();
   $page->disabled = FALSE; /* Edit this to true to make a default page disabled initially */
@@ -581,10 +578,10 @@ function static_pages_default_page_manager_pages() {
     $display->content['new-88261c93-df9a-4c74-8907-27e1b90c4bfd'] = $pane;
     $display->panels['sidebar_1'][0] = 'new-88261c93-df9a-4c74-8907-27e1b90c4bfd';
     $pane = new stdClass();
-    $pane->pid = 'new-f22fb5b6-5fbc-42d3-a879-b5ef7f1c4535';
+    $pane->pid = 'new-dd25d4ea-69f1-4685-a41c-861575a7bdbf';
     $pane->panel = 'sidebar_2';
     $pane->type = 'block';
-    $pane->subtype = 'advpoll-advpoll_block_22';
+    $pane->subtype = 'advpoll-advpoll_block_29';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -603,14 +600,14 @@ function static_pages_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'f22fb5b6-5fbc-42d3-a879-b5ef7f1c4535';
-    $display->content['new-f22fb5b6-5fbc-42d3-a879-b5ef7f1c4535'] = $pane;
-    $display->panels['sidebar_2'][0] = 'new-f22fb5b6-5fbc-42d3-a879-b5ef7f1c4535';
+    $pane->uuid = 'dd25d4ea-69f1-4685-a41c-861575a7bdbf';
+    $display->content['new-dd25d4ea-69f1-4685-a41c-861575a7bdbf'] = $pane;
+    $display->panels['sidebar_2'][0] = 'new-dd25d4ea-69f1-4685-a41c-861575a7bdbf';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = 'new-c5276e22-f295-460d-a6a1-d1bbb3f4588b';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['faq_panel'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 

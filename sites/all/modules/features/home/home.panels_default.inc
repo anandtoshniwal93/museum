@@ -44,7 +44,8 @@ function home_default_panels_mini() {
     $pane->configuration = array(
       'admin_title' => '',
       'title' => '',
-      'body' => '<h1>A Memorable Historic Adventure for the Whole Family!</h1>
+      'body' => '<h1>A Memorable Historic </h1>
+<h1>Adventure for the Whole Family!</h1>
 <p>Vitaesaert taset aplicaserde neafayse lreo porta sere kertyu erauas aityavolernatur aut oditaut.</p>',
       'format' => 'full_html',
       'substitute' => TRUE,
@@ -64,7 +65,7 @@ function home_default_panels_mini() {
     $display->content['new-00b3ac6d-1e4f-467d-8e2b-127a1df06ed0'] = $pane;
     $display->panels['middle'][0] = 'new-00b3ac6d-1e4f-467d-8e2b-127a1df06ed0';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-00b3ac6d-1e4f-467d-8e2b-127a1df06ed0';
+  $display->title_pane = '0';
   $mini->display = $display;
   $export['font_mini'] = $mini;
 
