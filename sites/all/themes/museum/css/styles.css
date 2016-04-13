@@ -1255,11 +1255,17 @@ body {
 .page-about-us #main {
   padding: 0px;
 }
+.page-about-us .panels-flexible-region-new-center {
+  width: 100%;
+}
 .page-about-us .panels-flexible-6 .panels-flexible-row {
   padding: 0 0 0.0em 0;
 }
 .page-about-us .about-us {
   background-color: #31353D;
+}
+.page-about-us .pane-title {
+  color: white;
 }
 @media screen {
   .page-about-us .mini-block .left-img {
