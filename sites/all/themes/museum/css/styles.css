@@ -1157,6 +1157,9 @@ body {
   border-right: 2px solid black;
 }
 
+.menu-wrapper {
+  text-transform: uppercase;
+}
 @media screen {
   .menu-wrapper {
     width: 100%;
@@ -1257,6 +1260,10 @@ body {
 }
 .page-about-us .panels-flexible-region-new-center {
   width: 100%;
+  float: none;
+}
+.page-about-us .panels-flexible-new .panels-flexible-row {
+  padding: 0 0 0.0em 0;
 }
 .page-about-us .panels-flexible-6 .panels-flexible-row {
   padding: 0 0 0.0em 0;
