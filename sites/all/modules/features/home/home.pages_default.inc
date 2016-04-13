@@ -223,7 +223,7 @@ function home_default_page_manager_pages() {
   $display->title_pane = 'new-daeff013-a91c-4130-8c5e-38eb0c9fbf29';
   $handler->conf['display'] = $display;
   $page->default_handlers[$handler->name] = $handler;
-  $pages['front_page'] = $page;
+  $pages[''] = $page;
 
   return $pages;
 
