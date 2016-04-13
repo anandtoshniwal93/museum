@@ -63,12 +63,12 @@ h6{
   }
 .form-text{
         @include breakpoint($mobile){
-          width: 83%;
+          width: 82%;
         }
         @include breakpoint($tablet){
           width: 93%;
         }
-      }
+}
 
 .blogs-list{
     .views-field.views-field-name,
