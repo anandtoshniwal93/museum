@@ -164,6 +164,22 @@ function portfolio_page_new_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'port-page';
+
+  /* Display: Page2 */
+  $handler = $view->new_display('page', 'Page2', 'page_1');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Port Page 2';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'porto2';
+  $handler->display->display_options['path'] = 'port-page2';
+
+  /* Display: Page 4 */
+  $handler = $view->new_display('page', 'Page 4', 'page_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Port Page4';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'porto4';
+  $handler->display->display_options['path'] = 'port-page4';
   $export['portfolio_page'] = $view;
 
   return $export;
