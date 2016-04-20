@@ -40,29 +40,24 @@ $susy: (
 }
 
 @include breakpoint($mobile){
-.page-about-us #content{
-
-    max-width: 100%;
-
-
-    .about-us{
+  .page-about-us #content{
       max-width: 100%;
-
-
-    }
-    .mini-block,
-    .pane-title,
-    .block2,
-    .testimony{
-      @include container;
-
-    }
-
+      .about-us{
+        max-width: 100%;
+      }
+      .mini-block,
+      .pane-title,
+      .block2,
+      .testimony{
+        @include container;
+      }
+  }
 }
-}
+
 .front #main{
     background:none;
 }
+
 .front #content {
   max-width: 100%;
   background:none;
@@ -91,10 +86,7 @@ $susy: (
   background:$white;
 }
 #content {
-
-
   background:$white;
-
   @include breakpoint($mobile){
      @include container(96%);
   }
@@ -119,4 +111,31 @@ $susy: (
 }
 
 
+.page-contactpage{
+  #content {
+    .panels-flexible-row{
+      @include breakpoint($mobile){
+        @include span(16);
+      }
+    }
+    .panels-flexible-row-last {
+      .panels-flexible-region-18-info{
+        @include breakpoint($mobile){
+          @include span(16);
+        }
+        @include breakpoint($tablet){
+          @include span(6);
+        }
+      }
+      .panels-flexible-region-18-center{
+        @include breakpoint($mobile){
+          @include span(16);
+        }
+        @include breakpoint($tablet){
+          @include span(10 last);
+        }
+      }
+    }
+  }
+}
 

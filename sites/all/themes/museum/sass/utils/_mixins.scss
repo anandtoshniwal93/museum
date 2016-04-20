@@ -82,6 +82,7 @@
         float: none;
         width: 100%;
         padding-bottom:30px;
+
     }
     @include breakpoint($tablet)
     {
@@ -90,6 +91,7 @@
     @include breakpoint($desktop)
     {
       @include span(3.9);
+
     }
   }
   .views-field-title {

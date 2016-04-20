@@ -34,7 +34,8 @@ body {
 .panel-col-top {
     display: table;
     background: rgba(0, 0, 0, 0.5);
-    border-image: url('../images/menu-collapsed-rtl.png');
+     border: 10px solid transparent;
+    border-image: url('../images/border-zig-zag.png') 30 round;
     @include breakpoint($mobile) {
         padding: 34px 0 43px;
     }
@@ -44,6 +45,11 @@ body {
         float: none;
         margin: auto;
         text-align: center;
+
+        border-top:2px;
+        border-bottom:0;
+        border-right:0;
+        border-left:0;
         .views-field-field-blog-image {
             @include breakpoint($mobile) {
                 max-width: 45%;
@@ -156,6 +162,7 @@ body {
 
 .panel-2col-bricks {
     .panel-col-first {
+
         @include breakpoint($mobile) {
             float: none;
             width: 100%;
@@ -194,6 +201,7 @@ body {
                     @include span(8);
                     padding-right: 40px;
                     margin-right: 0;
+                     border-right: 2px dashed black;
                 }
                 img {
                     box-shadow: 10px 4px 0 rgba(226, 226, 226, 0.5);
@@ -289,7 +297,7 @@ body {
 
 .video-block {
     margin-top: 64px;
-    background: #4D5057;
+    // background: #4D5057;
     padding: 117px 0 102px;
     text-align: center;
     h1 {
@@ -305,8 +313,15 @@ body {
             line-height: 70px;
         }
     }
+    .video-bg {
+        height: 470px;
+    }
+    .region-parallax-one {
+        z-index: 1;
+        position: relative;
+    }
     .video {
-        background: #4D5057;
+        // background: #4D5057;
     }
     p {
         line-height: 28px;
