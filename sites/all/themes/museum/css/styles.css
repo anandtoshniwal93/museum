@@ -433,7 +433,7 @@ th {
   }
 }
 @media screen {
-  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-18-info {
+  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-19-info {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -441,14 +441,14 @@ th {
   }
 }
 @media (min-width: 768px) {
-  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-18-info {
+  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-19-info {
     width: 36.70886%;
     float: left;
     margin-right: 1.26582%;
   }
 }
 @media screen {
-  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-18-center {
+  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-19-center {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -456,7 +456,7 @@ th {
   }
 }
 @media (min-width: 768px) {
-  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-18-center {
+  .page-contactpage #content .panels-flexible-row-last .panels-flexible-region-19-center {
     width: 62.02532%;
     float: right;
     margin-right: 0;

@@ -119,7 +119,7 @@ $susy: (
       }
     }
     .panels-flexible-row-last {
-      .panels-flexible-region-18-info{
+      .panels-flexible-region-19-info{
         @include breakpoint($mobile){
           @include span(16);
         }
@@ -127,7 +127,7 @@ $susy: (
           @include span(6);
         }
       }
-      .panels-flexible-region-18-center{
+      .panels-flexible-region-19-center{
         @include breakpoint($mobile){
           @include span(16);
         }
