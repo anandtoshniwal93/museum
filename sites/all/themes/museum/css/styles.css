@@ -1173,6 +1173,14 @@ body {
     padding-right: 15px;
   }
 }
+.footer ul li li:hover {
+  color: #31353d;
+  text-decoration: none;
+}
+.footer ul li li:focus {
+  color: #31353d;
+  text-decoration: none;
+}
 .footer ul li a {
   color: #31353d;
   text-decoration: none;
@@ -1348,6 +1356,7 @@ body {
 }
 .page-about-us .about-us {
   background-color: #31353D;
+  border-top: 10px solid #1BBAF0;
 }
 .page-about-us .pane-title {
   color: white;

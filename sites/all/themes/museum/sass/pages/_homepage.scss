@@ -414,6 +414,14 @@ body {
                 padding-left: 15px;
                 padding-right: 15px;
             }
+            li:hover{
+                color: #31353d;
+                text-decoration: none;
+            }
+            li:focus{
+                color: #31353d;
+                text-decoration: none;
+            }
             a {
                 color: #31353d;
                 text-decoration: none;
@@ -603,6 +611,7 @@ body {
     }
     .about-us {
         background-color: #31353D;
+        border-top:10px solid #1BBAF0;
     }
     .pane-title{
         color: white;
