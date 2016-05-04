@@ -1244,10 +1244,13 @@ body {
 }
 .menu-wrapper div#block-superfish-2 {
   background: white;
-  text-align: center;
+  padding-left: 5px;
   margin-left: 0px;
   width: 275px;
   border-radius: 10px;
+}
+.menu-wrapper #superfish-2-select {
+  width: 100%;
 }
 
 .sf-menu.sf-style-light-blue .sf-depth-1.first {

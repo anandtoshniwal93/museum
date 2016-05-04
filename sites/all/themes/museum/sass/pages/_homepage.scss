@@ -481,11 +481,14 @@ body {
     }
     div#block-superfish-2 {
     background: white;
-    text-align: center;
+    padding-left:5px;
     margin-left: 0px;
     width: 275px;
     border-radius: 10px;
 }
+  #superfish-2-select{
+    width: 100%;
+  }
 }
 
 .sf-menu {
