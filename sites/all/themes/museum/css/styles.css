@@ -504,7 +504,7 @@ body {
   display: table;
   background: rgba(0, 0, 0, 0.5);
   border: 10px solid transparent;
-  border-image: url("../images/border-zig-zag.png") 30 round;
+  border-image: url("../images/border-zig-zag.png") 20% round;
 }
 @media screen {
   .panel-col-top {
@@ -923,6 +923,11 @@ body {
   box-shadow: 10px 4px 0 rgba(226, 226, 226, 0.5);
   border-radius: 500px;
 }
+@media (min-width: 768px) {
+  .panel-2col-bricks .panel-col-first .front-three .views-row-2 {
+    border-right: 2px dashed black;
+  }
+}
 .panel-2col-bricks .panel-col-first .front-three .views-field-title {
   color: #31353d;
   font: 400 32px/40px 'Adamina', serif;
@@ -1171,6 +1176,12 @@ body {
 .footer ul li a {
   color: #31353d;
   text-decoration: none;
+}
+.footer ul li a:hover {
+  color: #21b7e9;
+}
+.footer ul li a:focus {
+  color: #21b7e9;
 }
 .footer .social-items {
   display: inline-block;

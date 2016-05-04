@@ -35,7 +35,7 @@ body {
     display: table;
     background: rgba(0, 0, 0, 0.5);
      border: 10px solid transparent;
-    border-image: url('../images/border-zig-zag.png') 30 round;
+    border-image: url('../images/border-zig-zag.png') 20% round;
     @include breakpoint($mobile) {
         padding: 34px 0 43px;
     }
@@ -207,6 +207,13 @@ body {
                     box-shadow: 10px 4px 0 rgba(226, 226, 226, 0.5);
                     border-radius: 500px;
                 }
+            }
+            .views-row-2{
+                @include breakpoint($tablet){
+                    border-right: 2px dashed black;
+
+                }
+
             }
             .views-field-title {
                 color: #31353d;
@@ -410,6 +417,14 @@ body {
             a {
                 color: #31353d;
                 text-decoration: none;
+            }
+            a:hover{
+            color:  #21b7e9;
+
+            }
+            a:focus{
+            color:  #21b7e9;
+
             }
         }
     }
