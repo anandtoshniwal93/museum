@@ -298,7 +298,7 @@ body {
 .video-block {
     margin-top: 64px;
     // background: #4D5057;
-    padding: 117px 0 102px;
+    //padding: 117px 0 102px;
     text-align: center;
     h1 {
         font-family: 'Bevan', cursive;
@@ -366,8 +366,16 @@ body {
             display: inline-block;
         }
         img {
-            width: 100%;
-            height: auto;
+            @include breakpoint($mobile){
+                width: 70%;
+                height: auto;
+            }
+            @include breakpoint($tablet){
+                width: 100%;
+                height: auto;
+            }
+
+
         }
     }
 }
@@ -449,7 +457,7 @@ body {
     text-transform: uppercase;
     @include breakpoint($mobile) {
         width: 100%;
-        padding: 79px 17px 18px 18px;
+        padding: 30px 17px 18px 18px;
         //padding: 0px 17px 18px 18px;
         background: #000;
     }
@@ -471,6 +479,13 @@ body {
         margin-top: -150px;
         //  padding: 23px 17px 23px 32px;
     }
+    div#block-superfish-2 {
+    background: white;
+    text-align: center;
+    margin-left: 0px;
+    width: 275px;
+    border-radius: 10px;
+}
 }
 
 .sf-menu {
@@ -692,7 +707,7 @@ body {
           @include breakpoint($mobile)
           {
             float: none;
-            width: 100%;
+            width: 50%;
             padding-right:0;
             position: relative;
           }

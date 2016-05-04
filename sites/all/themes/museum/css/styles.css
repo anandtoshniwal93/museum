@@ -1044,7 +1044,6 @@ body {
 
 .video-block {
   margin-top: 64px;
-  padding: 117px 0 102px;
   text-align: center;
 }
 .video-block h1 {
@@ -1122,9 +1121,17 @@ body {
     display: inline-block;
   }
 }
-.panel-col-bottom .views-row img {
-  width: 100%;
-  height: auto;
+@media screen {
+  .panel-col-bottom .views-row img {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .panel-col-bottom .views-row img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .footer {
@@ -1210,7 +1217,7 @@ body {
 @media screen {
   .menu-wrapper {
     width: 100%;
-    padding: 79px 17px 18px 18px;
+    padding: 30px 17px 18px 18px;
     background: #000;
   }
 }
@@ -1234,6 +1241,13 @@ body {
     float: left;
     margin-top: -150px;
   }
+}
+.menu-wrapper div#block-superfish-2 {
+  background: white;
+  text-align: center;
+  margin-left: 0px;
+  width: 275px;
+  border-radius: 10px;
 }
 
 .sf-menu.sf-style-light-blue .sf-depth-1.first {
@@ -1619,7 +1633,7 @@ body {
 @media screen {
   .page-about-us .testimony .views-row {
     float: none;
-    width: 100%;
+    width: 50%;
     padding-right: 0;
     position: relative;
   }
